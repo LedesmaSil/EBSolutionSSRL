@@ -1,0 +1,8572 @@
+:root {
+    --dark-slate-gray-2: #202e44;
+    --white-smoke: #f3f3f3;
+    --dark-turquoise: #00bccd;
+    --txt: #4c4c4c;
+    --dim-gray: #707070;
+    --dim-gray-2: #646464;
+    --bg-cuadrados: #00bccd;
+    --dark-slate-gray: #3b3b3b;
+    --dark-gray: #9c9c9c;
+    --gainsboro: #dfdfdf;
+    --gray: #7e7e7e;
+    --dark-gray-2: #ababab;
+    --gainsboro-2: #d9d7d7;
+    --lime-green: #44d24a;
+    --sky-blue: #73dae4;
+    --steel-blue: #3891ca;
+    --dark-turquoise-2: rgba(0, 188, 205, .18);
+    --crimson: #cd1337;
+    --light-gray: #cbcbcb;
+    --steel-blue-2: #3891ca;
+    --lavender: #e9e9e9;
+    --white-smoke-2: #f4f4f4;
+    --light-green: #7cfc81;
+  }
+  
+  body {
+    color: #333;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+  
+  h2 {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  
+  h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+  h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  
+  h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: var(--dark-slate-gray-2);
+    text-decoration: none;
+  }
+  
+  .button {
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    padding: 4px 15px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .button.isobutton {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background-color: #cd1337;
+    border-bottom: 10px solid #960e29;
+    margin-bottom: 25px;
+    padding: 12px 25px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    transition: all .5s;
+  }
+  
+  .button.isobutton:hover {
+    background-color: #a61431;
+    border-bottom-width: 12px;
+    border-bottom-color: #7d0920;
+    transform: translate(0, -3px);
+    box-shadow: -4px 4px 0 1px rgba(0, 0, 0, .53);
+  }
+  
+  .button.exito {
+    float: left;
+    clear: left;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: #44d24a;
+    border-radius: 3px;
+    margin-top: 58px;
+    margin-bottom: 20px;
+    padding: 11px 24px;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    transition: background-color .3s;
+    box-shadow: 0 -2px rgba(0, 0, 0, .1);
+  }
+  
+  .button.exito:hover {
+    background-color: #35a63b;
+  }
+  
+  .button.paradas-de-planta {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid #fff;
+    margin-top: 11px;
+    padding: 24px 40px;
+    font-family: Montserrat, sans-serif;
+    font-size: 19px;
+    transition: all .5s;
+  }
+  
+  .button.paradas-de-planta:hover {
+    color: #00bccd;
+    background-color: rgba(255, 255, 255, .67);
+    border-color: #00bccd;
+    font-size: 18px;
+  }
+  
+  .button.paradas-de-planta.index {
+    border-width: 2px;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    display: block;
+  }
+  
+  .button.paradas-de-planta.index:hover {
+    color: #000;
+    border-color: #000;
+  }
+  
+  .bg-hero {
+    width: 100%;
+  }
+  
+  .bg-hero.celeste {
+    background-color: #00bccd;
+    width: 100%;
+    height: 100%;
+    margin-left: -1px;
+  }
+  
+  .hero-slider {
+    height: 560px;
+    min-height: 523px;
+  }
+  
+  .hero {
+    background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  }
+  
+  .hero.foto1 {
+    background-image: url('../images/limpieza-hidrocinetica01.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  
+  .hero.foto2 {
+    background-image: url('../images/limpieza-hidrocinetica02.jpg');
+    background-position: 100% 0;
+  }
+  
+  .hero.foto3 {
+    background-image: url('../images/limpieza-hidrocinetica03.jpg');
+    background-size: cover;
+  }
+  
+  .hero.foto4 {
+    background-image: url('../images/limpieza-hidrocinetica05.jpg');
+    background-size: cover;
+  }
+  
+  .hero.foto5 {
+    background-image: url('../images/limpieza-hidrocinetica04.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  
+  .hero.flow01 {
+    background-image: url('../images/servicios-hlb-hidrodecapado-de-superficies_1.jpg');
+    background-size: cover;
+    top: 0;
+    right: 0;
+  }
+  
+  .hero.flow02 {
+    background-image: url('../images/hlb-hidrocat-flow-02.jpg');
+    background-size: cover;
+  }
+  
+  .hero.flow03 {
+    background-image: url('../images/hlb-hidrocat-flow-03.jpg');
+    background-position: 38% -95%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+  }
+  
+  .hero.flow04 {
+    background-image: url('../images/servicios-hlb-hidrodecapado-de-superficies-02.jpg');
+    background-size: cover;
+  }
+  
+  .hero.flow05 {
+    background-image: url('../images/hlb-hidrocat-flow-05.jpg');
+    background-size: cover;
+  }
+  
+  .hero.hidro01 {
+    background-image: url('../images/hlb-hidrocorte-01.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  
+  .hero.hidro02 {
+    background-image: url('../images/hlb-hidrocorte-02.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  
+  .hero.hidro03 {
+    background-image: url('../images/hlb-hidrocorte-03.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  
+  .hero.hidro04 {
+    background-image: url('../images/hlb-hidrocorte-04.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  
+  .hero.hidro05 {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/hlb-hidrocorte-05.jpg');
+    background-position: 0 0, 100% 0;
+    background-size: auto, cover;
+  }
+  
+  .hero.limp01 {
+    background-image: url('../images/hlb-limpieza-quimica-01.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  
+  .hero.limp02 {
+    background-image: url('../images/hlb-limpieza-quimica-02.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  
+  .hero.limp03 {
+    background-image: url('../images/hlb-limpieza-quimica-03.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  
+  .hero.limp04 {
+    background-image: url('../images/hlb-limpieza-quimica-04.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  
+  .hero.limp05 {
+    background-image: url('../images/hlb-limpieza-quimica-05.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  
+  .hero.especif-tecnica {
+    background-image: url('../images/especificacion-tecnica-01.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  
+  .hero.especif-tecnica02 {
+    background-image: url('../images/especificacion-tecnica-02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero.montaje01 {
+    background-image: url('../images/montaje-industrial-02.jpg');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero.montaje02 {
+    background-image: url('../images/montaje-industrial-03.jpg');
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  
+  .hero.montaje03 {
+    background-image: url('../images/montaje-industrial-04.jpg');
+    background-size: cover;
+  }
+  
+  .hero.montaje04 {
+    background-image: url('../images/montaje-industrial-05.jpg');
+    background-position: 50% 46px;
+    background-size: cover;
+  }
+  
+  .hero.montaje05 {
+    background-image: url('../images/montaje-industrial-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero.andamios01 {
+    background-image: url('../images/servicio-hlb-andamios-01.jpg');
+    background-size: cover;
+  }
+  
+  .hero.andamios02 {
+    background-image: url('../images/servicio-hlb-andamios-02.jpg');
+    background-size: cover;
+  }
+  
+  .hero.andamios03 {
+    background-image: url('../images/servicio-hlb-andamios-03.jpg');
+    background-size: cover;
+  }
+  
+  .hero.andamios04 {
+    background-image: url('../images/servicio-hlb-andamios-04.jpg');
+    background-position: 50% 39px;
+    background-size: cover;
+  }
+  
+  .hero.andamios05 {
+    background-image: url('../images/servicio-hlb-andamios-05.jpg');
+    background-size: cover;
+  }
+  
+  .hero.inspeccion01 {
+    background-image: url('../images/hlb-inspeccion-01.jpg');
+    background-position: 50% 0;
+  }
+  
+  .hero.inspeccion02 {
+    background-image: url('../images/hlb-inspeccion-02.jpg');
+    background-size: cover;
+  }
+  
+  .hero.inspeccion03 {
+    background-image: url('../images/hlb-inspeccion-03.jpg');
+    background-size: cover;
+  }
+  
+  .hero.inspeccion04 {
+    background-image: url('../images/hlb-inspeccion-04.jpg');
+    background-position: 0 30%;
+  }
+  
+  .hero.inspeccion05 {
+    background-image: url('../images/hlb-inspeccion-05.jpg');
+    background-position: 100% 0;
+    background-size: cover;
+  }
+  
+  .hero.domiciliario01 {
+    background-image: url('../images/servicios-hlb-transporte-industrial-03.jpg');
+    background-position: 3% 66px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero.industrial01 {
+    background-image: url('../images/servicios-hlb-transporte-industrial-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero.domiciliario02 {
+    background-image: url('../images/03.jpg');
+    background-size: cover;
+  }
+  
+  .hero.domiciliario03 {
+    background-image: url('../images/01.jpg');
+    background-size: cover;
+  }
+  
+  .hero.industrial02 {
+    background-image: url('../images/servicios-hlb-transporte-industrial-02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero.flow10 {
+    background-image: url('../images/servicios-hlb-hidrodecapado-de-superficies.jpg');
+    background-position: 50%;
+    background-size: cover;
+  }
+  
+  .hero.flow11 {
+    background-image: url('../images/servicios-hlb-hidrodecapado-de-superficies-05.jpg');
+    background-position: 50%;
+    background-size: cover;
+  }
+  
+  .hero.industrial04 {
+    background-image: url('../images/servicios-hlb-transporte-industrial-05.jpg');
+    background-size: cover;
+  }
+  
+  .hero.industrial05 {
+    background-image: url('../images/servicios-hlb-transporte-industrial-04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero.industrial06 {
+    background-image: url('../images/servicios-hlb-transporte-industrial-06.jpg');
+    background-size: cover;
+  }
+  
+  .hero.industrial07 {
+    background-image: url('../images/servicios-hlb-transporte-industrial-07.jpg');
+    background-size: cover;
+  }
+  
+  .nav-hero {
+    float: right;
+    clear: left;
+    text-align: right;
+    width: auto;
+    height: auto;
+    margin-right: 15px;
+    font-size: 10px;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .arrow-hero, .left-arrow-hero {
+    display: none;
+  }
+  
+  .foto-hero {
+    height: auto;
+    min-height: 523px;
+    position: fixed;
+  }
+  
+  .hero-div {
+    float: left;
+    width: 50%;
+    height: 560px;
+  }
+  
+  .hero-div.slider {
+    width: 50%;
+  }
+  
+  .div-100 {
+    text-align: center;
+    width: 100%;
+    height: 560px;
+  }
+  
+  .foto {
+    background-image: url('../images/flow01.jpg');
+    background-size: contain;
+    background-attachment: scroll;
+  }
+  
+  .foto-txt {
+    float: none;
+    height: 450px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .foto-txt.right {
+    margin-left: 0;
+    margin-right: -11px;
+  }
+  
+  .foto-txt.celeste {
+    color: #73dae4;
+    background-color: #73dae4;
+    background-image: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .foto-txt.sin-foto {
+    background-image: none;
+  }
+  
+  .foto-txt.video {
+    background-image: url('../images/ver-video_1.jpg');
+    background-size: cover;
+  }
+  
+  .foto-txt.video.lightbox-container {
+    background-image: none;
+    margin-right: -8px;
+  }
+  
+  .foto-txt.video.light-auto {
+    background-image: url('../images/limpieza-automatizada.jpg');
+  }
+  
+  .foto-txt.hidrovideo {
+    background-image: url('../images/ver-video_1.jpg');
+    background-size: cover;
+  }
+  
+  .foto-txt.lightbox-automatizada {
+    background-image: url('../images/limpieza-automatizada.jpg');
+  }
+  
+  .foto-txt.lightbox-tradicional {
+    background-image: url('../images/limpieza-convencional.jpg');
+    background-size: cover;
+  }
+  
+  .foto-txt.flowvideo {
+    background-image: url('../images/ver-video.jpg');
+    background-size: cover;
+  }
+  
+  .foto-txt.lightbox-flow01 {
+    background-image: url('../images/hlb-prepa-superficies01_1.jpg');
+    background-size: cover;
+  }
+  
+  .foto-txt.lighboxflow02 {
+    background-image: url('../images/hlb-prepa-superficies02.jpg');
+    background-size: cover;
+  }
+  
+  .foto-txt.gris {
+    background-color: rgba(223, 223, 223, .49);
+  }
+  
+  .foto-txt.hidrocortevideo {
+    background-image: url('../images/ver-videos.jpg');
+  }
+  
+  .foto-txt.lightboxhidrocorte {
+    background-image: url('../images/hidrolavado.jpg');
+    background-size: cover;
+    height: 750px;
+  }
+  
+  .foto-txt.limpvideo {
+    background-image: url('../images/hlb-limpieza-quimica-video.jpg');
+    background-size: cover;
+  }
+  
+  .hero-light {
+    float: none;
+    clear: both;
+    color: #fff;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-family: Titillium Web, sans-serif;
+    font-size: 56px;
+    font-weight: 200;
+  }
+  
+  .hero-light.de-empresa {
+    margin-bottom: 0;
+    font-size: 45px;
+  }
+  
+  .float-texto-hero {
+    float: left;
+    text-align: left;
+    width: 450px;
+    margin-top: 156px;
+    margin-left: 33px;
+    display: inline-block;
+  }
+  
+  .float-texto-hero.solo-industrial {
+    width: 528px;
+  }
+  
+  .hero-bold {
+    float: none;
+    color: #fff;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Titillium Web, sans-serif;
+    font-size: 56px;
+  }
+  
+  .hero-bold.de-empresa {
+    margin-top: -6px;
+    font-size: 50px;
+  }
+  
+  .bajada-hero-titulo {
+    color: #4c4c4c;
+    width: 400px;
+    font-family: Titillium Web, sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  
+  .bajada-hero-titulo.solo-empresa {
+    color: #24648c;
+  }
+  
+  .bajada-hero-titulo.de-servicios {
+    color: #000;
+    width: auto;
+    font-size: 18px;
+    line-height: 23px;
+    display: block;
+  }
+  
+  .txt-hero {
+    float: left;
+    clear: both;
+    color: #4c4c4c;
+    text-align: left;
+    width: auto;
+    height: 133px;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+    position: static;
+  }
+  
+  .txt-hero.hidrocortehero, .txt-hero.hidrocortehero-3-lineas, .txt-hero.montaje, .txt-hero.andamios, .txt-hero.inspeccion {
+    height: 105px;
+  }
+  
+  .txt-hero.transporte {
+    height: 44px;
+  }
+  
+  .txt-hero.transporte.industrial {
+    height: 133px;
+  }
+  
+  .txt-hero.de-empresa {
+    color: #fff;
+    height: auto;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .txt-hero.de-servicios {
+    height: auto;
+    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 22px;
+  }
+  
+  .txt-hero.hidrodecapado {
+    height: 161px;
+  }
+  
+  .hero-contact {
+    z-index: 500;
+    float: left;
+    text-align: left;
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+    height: 50px;
+    margin-bottom: 8px;
+    margin-left: 2px;
+    padding-bottom: 0;
+    display: block;
+    position: relative;
+    top: 38px;
+    bottom: 0;
+    left: -1px;
+    right: 0;
+  }
+  
+  .hero-contact.responsive, .hero-contact.mobile {
+    display: none;
+  }
+  
+  .description-slide {
+    z-index: 200;
+    text-align: right;
+    background-color: rgba(0, 0, 0, .49);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .desp-slide {
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 21px;
+    margin-left: 0;
+    margin-right: 126px;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .titulos-txt {
+    color: #707070;
+    letter-spacing: -.5px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+  }
+  
+  .titulos-txt.left {
+    float: right;
+    color: #fff;
+    max-width: 2000px;
+    margin-bottom: 24px;
+    padding: 198px 15px 225px 0;
+    font-size: 25px;
+  }
+  
+  .titulos-txt.andamios {
+    margin-bottom: 47px;
+  }
+  
+  .titulos-txt.hidrodecapado {
+    margin-bottom: 15px;
+  }
+  
+  .txt-descripcion {
+    color: #646464;
+    font-family: Roboto, sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+  
+  .txt-descripcion.fondo-verde {
+    color: #000;
+  }
+  
+  .float-texto-descp {
+    float: none;
+    width: 66%;
+    margin-top: 99px;
+    margin-left: 114px;
+  }
+  
+  .float-texto-descp.derecho {
+    margin-top: 92px;
+    margin-left: 50px;
+  }
+  
+  .float-texto-descp.derecho._2col {
+    width: 90%;
+  }
+  
+  .float-texto-descp.derecho.hidrocorte {
+    width: 71%;
+    margin-top: 71px;
+    margin-left: 68px;
+  }
+  
+  .float-texto-descp.izquierdo {
+    margin-top: 101px;
+    margin-left: 114px;
+  }
+  
+  .float-texto-descp.izquierdo.flowleft {
+    width: 76%;
+    margin-top: 67px;
+    margin-left: 63px;
+  }
+  
+  .float-texto-descp.izquierdo.flowright {
+    width: 89%;
+    margin-top: 83px;
+    margin-left: 45px;
+  }
+  
+  .float-texto-descp.izquierdo.hidrocorte {
+    width: 71%;
+    margin-top: 80px;
+    margin-left: 65px;
+  }
+  
+  .float-texto-descp.flow {
+    width: 73%;
+    margin-top: 58px;
+    margin-left: 88px;
+  }
+  
+  .consultar {
+    opacity: .8;
+    color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 18px;
+    margin-left: 31px;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .5s;
+    display: block;
+  }
+  
+  .consultar:hover {
+    opacity: 1;
+    margin-left: 33px;
+  }
+  
+  .ver-video {
+    z-index: 5;
+    background-color: rgba(0, 0, 0, .2);
+    width: auto;
+    height: 77px;
+    transition: all .5s;
+    position: relative;
+    top: 374px;
+    left: 0;
+  }
+  
+  .ver-video:hover {
+    background-color: rgba(0, 0, 0, .45);
+  }
+  
+  .ver-video.lightbox-container {
+    width: 103%;
+    height: 450px;
+    margin-left: -10px;
+    margin-right: 16px;
+    padding-right: 0;
+    position: static;
+  }
+  
+  .ver-video.para-lightbox {
+    background-color: rgba(0, 0, 0, .58);
+  }
+  
+  .ver-video.para-lightbox._750px, .ver-video.especif {
+    top: 673px;
+  }
+  
+  .boton-ver-video {
+    background-color: #000;
+    width: 80px;
+    height: 77px;
+    transition: all .9s;
+    display: block;
+  }
+  
+  .boton-ver-video:hover {
+    background-color: #202e44;
+  }
+  
+  .iconos {
+    text-align: center;
+    background-image: url('../images/icon_6977.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    width: 50%;
+    height: 50%;
+    margin-top: 0;
+    margin-left: 113px;
+    padding-top: 176px;
+  }
+  
+  .iconos-box {
+    text-align: center;
+    width: 220px;
+    height: 220px;
+    margin-top: 0;
+    margin-left: 0;
+    display: block;
+  }
+  
+  .iconos-box._3col {
+    width: 150px;
+    min-width: 1px;
+    height: 150px;
+    margin-left: -17px;
+  }
+  
+  .tipo-de-servicios {
+    color: #4c4c4c;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  
+  .tipo-de-servicios.hidrocorte {
+    margin-bottom: 42px;
+  }
+  
+  .celeste {
+    color: #00bccd;
+  }
+  
+  .celeste.italic {
+    font-style: italic;
+  }
+  
+  .txt-servicios {
+    color: #646464;
+    padding-right: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  
+  .txt-servicios._2col {
+    padding-right: 29px;
+  }
+  
+  .txt-servicios.empresa-icon {
+    text-align: center;
+  }
+  
+  .txt-servicios.empresa-icon.full {
+    margin-bottom: 33px;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+  
+  .video-icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    min-height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 14px;
+    padding-top: 0;
+    transition: all .5s;
+    display: block;
+    position: relative;
+    top: 14px;
+  }
+  
+  .video-icon:hover {
+    transform: scale(.9);
+  }
+  
+  .ver-video-txt {
+    float: none;
+    color: #fff;
+    text-transform: uppercase;
+    width: 377px;
+    margin-top: 19px;
+    margin-left: 101px;
+    font-family: Roboto, sans-serif;
+    text-decoration: underline;
+    list-style-type: none;
+    transition: all .5s;
+    display: block;
+  }
+  
+  .ver-video-txt:hover {
+    margin-left: 104px;
+  }
+  
+  .ver-video-txt.lightbox-txt {
+    margin-top: 20px;
+    margin-left: 79px;
+  }
+  
+  .flecha-blanca {
+    z-index: 51;
+    text-align: center;
+    background-image: url('../images/flecha-blanca.png');
+    background-size: contain;
+    width: 49px;
+    height: 25px;
+    margin-top: -2px;
+    margin-left: 268px;
+    display: block;
+    position: absolute;
+  }
+  
+  .flecha-blanca.left {
+    margin-top: -5px;
+    margin-left: 265px;
+  }
+  
+  .flecha-blanca.left.data {
+    height: 24px;
+    margin-top: -47px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: -302px;
+    right: 0;
+  }
+  
+  .foto-columna {
+    width: 100%;
+    height: 450px;
+  }
+  
+  .foto-ancho {
+    height: 400px;
+    margin-top: 0;
+    margin-right: -10px;
+  }
+  
+  .foto-ancho.derecho {
+    margin-top: 0;
+    margin-left: -10px;
+    margin-right: -8px;
+  }
+  
+  .bg-celeste {
+    background-color: rgba(0, 188, 205, .34);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bg-blanco {
+    background-color: #fff;
+    margin-right: -8px;
+    display: block;
+  }
+  
+  .list-item {
+    color: #3b3b3b;
+    border-bottom: 1px solid #00bccd;
+    margin-bottom: 11px;
+    padding-bottom: 12px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    list-style-type: none;
+  }
+  
+  .list-item.last {
+    border-bottom-style: none;
+    border-bottom-width: 1px;
+    margin-bottom: 11px;
+    padding-bottom: 12px;
+  }
+  
+  .list-item.direccion {
+    background-image: url('../images/mapa-01.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    padding-left: 49px;
+  }
+  
+  .list-item.telefono {
+    background-image: url('../images/telefono-01.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    padding-left: 49px;
+  }
+  
+  .list {
+    color: #00bccd;
+    border-bottom-style: none;
+    border-bottom-width: 2px;
+    margin-right: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+  }
+  
+  .celeste-left {
+    float: none;
+    clear: none;
+    background-color: #00bccd;
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+  
+  .celeste-right {
+    float: right;
+    width: 201px;
+    height: auto;
+    margin-top: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  
+  .bajada-left {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  
+  .foto-larga {
+    background-image: url('../images/test-hidorc.jpg');
+    background-size: cover;
+    width: 500px;
+    height: 1000px;
+    position: absolute;
+  }
+  
+  .div-video {
+    background-color: #f2f2f2;
+    width: auto;
+    height: 450px;
+    margin-top: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 68px;
+    display: block;
+  }
+  
+  .yotube {
+    width: 100%;
+    height: 397px;
+  }
+  
+  .mas-servicios {
+    float: none;
+    color: #9c9c9c;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 114px;
+    margin-left: 19px;
+    padding-right: 26px;
+    font-family: Roboto, sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    display: inline-block;
+  }
+  
+  .mas-servicios.left {
+    float: left;
+    width: auto;
+    margin: 46px auto 36px 20px;
+    display: block;
+  }
+  
+  .mas-servicios.footer-margin {
+    margin-bottom: 23px;
+    font-weight: 700;
+  }
+  
+  .mas-servicios-list {
+    margin-left: 0;
+    padding-left: 19px;
+    padding-right: 36px;
+  }
+  
+  .mas-servicios-list.left {
+    margin-top: 90px;
+  }
+  
+  .mas-servicios-link {
+    color: #9c9c9c;
+    border-bottom: 1px dotted #9c9c9c;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all .5s;
+    display: block;
+  }
+  
+  .mas-servicios-link:hover {
+    color: #00bccd;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-style: solid;
+    border-bottom-color: #00bccd;
+    padding-top: 0;
+    padding-left: 8px;
+  }
+  
+  .mas-servicios-link.w--current {
+    color: #d6d6d6;
+    display: none;
+  }
+  
+  .mas-servicios-link.last {
+    border-bottom-style: none;
+    border-bottom-width: 0;
+  }
+  
+  .servicios {
+    float: none;
+    color: #00bccd;
+    margin-top: 42px;
+    margin-left: 33px;
+    font-family: Roboto, sans-serif;
+    font-size: 27px;
+    display: block;
+  }
+  
+  .servicios.fondo-verde {
+    color: #000;
+  }
+  
+  .servicios.paradas-de-planta {
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 52px;
+  }
+  
+  .servicios.paradas-de-planta.bolder {
+    font-weight: 200;
+  }
+  
+  .servicios.paradas-de-planta.bco {
+    color: #fff;
+    margin-top: 124px;
+  }
+  
+  .footer {
+    background-color: #f3f3f3;
+    border-top: 1px solid #d9d9d9;
+    margin-bottom: 0;
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+  
+  .clientes {
+    float: none;
+    width: 18%;
+  }
+  
+  .slider-clientes {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-style: none;
+    height: auto;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .26);
+  }
+  
+  .navbar.para-empresa, .navbar.seccion-servicios {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .navbar-section {
+    z-index: 998;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+  }
+  
+  .logo {
+    float: none;
+    position: absolute;
+  }
+  
+  .menu {
+    color: #202e44;
+    padding-top: 27px;
+    font-family: Alwyn;
+    font-size: 17px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all .5s;
+  }
+  
+  .menu:hover {
+    color: #00bccd;
+    border-bottom-style: none;
+    border-bottom-width: 0;
+    padding-bottom: 20px;
+  }
+  
+  .menu.menu-open {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+  }
+  
+  .menu.menu-open:hover {
+    background-color: rgba(223, 223, 223, .29);
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom: 3px #00bccd;
+    padding-bottom: 17px;
+  }
+  
+  .menu.menu-open.w--current {
+    border-top-style: solid;
+    border-top-width: 4px;
+    padding-top: 23px;
+  }
+  
+  .menu.menu-open.w--current:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-style: none;
+    border-bottom-width: 0;
+  }
+  
+  .menu.menu-open.menu-empresa {
+    color: #fff;
+  }
+  
+  .menu.menu-open.menu-empresa:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-bottom-style: none;
+    border-bottom-color: rgba(0, 0, 0, .26);
+    padding-top: 23px;
+  }
+  
+  .separator-footer {
+    color: #dfdfdf;
+    background-color: #dfdfdf;
+    width: 100%;
+    height: 1px;
+    margin-top: 57px;
+    margin-bottom: 45px;
+  }
+  
+  .titulo-footer {
+    color: #7e7e7e;
+    margin-top: 20px;
+    margin-bottom: 39px;
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  
+  .txt-footer {
+    color: #ababab;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .li-footer {
+    border-bottom-style: none;
+    border-bottom-width: 0;
+    line-height: 24px;
+  }
+  
+  .redes-container {
+    float: left;
+    opacity: .54;
+    width: 26%;
+    margin-bottom: 10px;
+    margin-right: 13px;
+    transition: all .5s;
+  }
+  
+  .redes-container:hover {
+    opacity: .87;
+    transform: rotate(360deg);
+  }
+  
+  .redes-container.zocalo {
+    width: 10%;
+    margin-top: 5px;
+    margin-right: 19px;
+  }
+  
+  .image-footer-container {
+    margin-bottom: 9px;
+  }
+  
+  .image-footer-01 {
+    width: 38%;
+    margin-top: 9px;
+    margin-bottom: 20px;
+  }
+  
+  .mask-clientes {
+    margin-left: 73px;
+    margin-right: 73px;
+  }
+  
+  .slides-clientes {
+    width: 16.5%;
+  }
+  
+  .slide-cliente-icon {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .slide-nav-clientes {
+    display: none;
+  }
+  
+  .slider-clientes-arrow {
+    color: #ababab;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  }
+  
+  .arrow-clientes-left {
+    opacity: .69;
+    text-align: center;
+    margin-top: 29px;
+    transition: all .5s;
+  }
+  
+  .arrow-clientes-left:hover {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  
+  .arrow-clientes-right {
+    opacity: .69;
+    margin-top: 29px;
+    transition: all .5s;
+  }
+  
+  .arrow-clientes-right:hover {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  
+  .servicios-section {
+    padding-bottom: 62px;
+  }
+  
+  .servicios-section.bg-gris {
+    background-color: rgba(126, 126, 126, 0);
+  }
+  
+  .logo-image {
+    width: 68px;
+  }
+  
+  .credits {
+    background-color: #d8d8d8;
+    border-top: 1px solid #ccc;
+    border-bottom: 0 #212121;
+  }
+  
+  .margin-bottom {
+    margin-bottom: 16px;
+  }
+  
+  .logo-credit {
+    float: left;
+    width: 121px;
+  }
+  
+  .facebook {
+    float: left;
+    margin-top: 19px;
+    margin-right: 14px;
+  }
+  
+  .um-credit {
+    float: right;
+    margin-top: 20px;
+  }
+  
+  .iconos-credits {
+    float: right;
+    color: #ababab;
+    font-size: 13px;
+  }
+  
+  .um {
+    float: right;
+    color: #7e7e7e;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all .5s;
+  }
+  
+  .um:hover {
+    color: #00bccd;
+  }
+  
+  .mas-servicios-50 {
+    position: static;
+  }
+  
+  .icono-link {
+    float: left;
+    margin-top: 111px;
+    margin-left: 174px;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .icono-link._3col {
+    margin-top: 136px;
+    margin-left: 90px;
+  }
+  
+  .sidebar {
+    z-index: 999;
+    background-color: #44d24a;
+    width: 300px;
+    min-width: 0;
+    padding: 24px 31px 31px 17px;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, .22);
+  }
+  
+  .sidebar-field-label {
+    color: #3b3b3b;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .sidebar-field-label.sticky {
+    float: left;
+  }
+  
+  .sidebar-text-field {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none none solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #fff;
+    padding-left: 4px;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .sidebar-text-field.sticky {
+    float: left;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--dark-slate-gray-2);
+    color: var(--white-smoke);
+  }
+  
+  .sidebar-text-field.sticky::placeholder {
+    color: var(--dark-slate-gray-2);
+  }
+  
+  .sidebar-text-field.sticky._2 {
+    padding-bottom: 36px;
+  }
+  
+  .sidebar-boton-enviar {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: #3b3b3b;
+    border-radius: 3px;
+    margin-top: 4px;
+    margin-bottom: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Titillium Web, sans-serif;
+    font-size: 14px;
+    transition: all .5s;
+  }
+  
+  .sidebar-boton-enviar:hover {
+    background-color: #171717;
+  }
+  
+  .sidebar-boton-enviar.sticky {
+    float: left;
+    border: 2px solid var(--dark-slate-gray-2);
+    color: var(--dark-slate-gray-2);
+    text-align: center;
+    letter-spacing: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    margin-top: 37px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: Montserrat, sans-serif;
+    font-size: 11px;
+  }
+  
+  .sidebar-boton-enviar.sticky:hover {
+    color: #3b3b3b;
+    border-color: #4c4c4c;
+  }
+  
+  .sidebar-block-close {
+    float: right;
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    margin-right: -8px;
+    padding: 5px 8px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .sidebar-txt-cerrar {
+    float: right;
+    color: #3b3b3b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 0;
+    margin-top: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .5s;
+  }
+  
+  .sidebar-txt-cerrar:hover {
+    color: #1c1c1c;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    text-decoration: none;
+  }
+  
+  .sidebar-h2 {
+    float: none;
+    color: #3b3b3b;
+    margin-top: -7px;
+    margin-bottom: 4px;
+    font-family: Titillium Web, sans-serif;
+  }
+  
+  .sidebar-h2.sticky {
+    color: #fff;
+    margin-top: -12px;
+    font-size: 19px;
+    line-height: 26px;
+  }
+  
+  .sidebar-txt {
+    color: #3b3b3b;
+    margin-bottom: 17px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+  }
+  
+  .sidebar-txt.stycky {
+    color: #fff;
+    display: none;
+  }
+  
+  .sidebar-close-icon {
+    float: right;
+    opacity: .59;
+    width: 22px;
+    margin-top: -1px;
+    margin-left: 2px;
+    transition: all .5s;
+  }
+  
+  .sidebar-close-icon:hover {
+    opacity: 1;
+    margin-left: 0;
+    transform: scale(.9);
+  }
+  
+  .sidebar-success {
+    color: #dfdfdf;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+  
+  .lightbox {
+    width: auto;
+    height: 450px;
+    margin-bottom: 0;
+    position: static;
+    overflow: visible;
+  }
+  
+  .lightbox.automati {
+    background-image: url('../images/DSC06584.JPG');
+    background-size: cover;
+  }
+  
+  .lightbox-izquierdo {
+    height: 400px;
+    display: inline-block;
+    position: static;
+    overflow: hidden;
+  }
+  
+  .lightbox-izquierdo.derecho {
+    height: 450px;
+  }
+  
+  .image-lightbox {
+    height: 450px;
+    margin-right: 30px;
+  }
+  
+  .test-lightbox {
+    width: 592px;
+    max-width: 597px;
+    height: 425px;
+    margin-left: -10px;
+  }
+  
+  .ver-fotos {
+    float: none;
+    width: auto;
+    min-width: 0;
+    height: auto;
+    min-height: 40px;
+    margin-top: 0;
+    margin-left: 0;
+    display: block;
+    position: static;
+    top: -37px;
+    left: -4px;
+  }
+  
+  .photo-lightbox {
+    float: left;
+    opacity: .8;
+    width: 50px;
+    height: auto;
+    margin-top: 19px;
+    margin-left: 13px;
+    transition: all .5s;
+    position: static;
+    top: 55px;
+  }
+  
+  .cuadrado-negro {
+    float: left;
+    clear: left;
+    background-color: #44d24a;
+    margin-top: -59px;
+    position: static;
+    overflow: visible;
+  }
+  
+  .container-mas-serv-left {
+    float: none;
+    margin-top: 0;
+    padding-top: 43px;
+    position: static;
+  }
+  
+  .container-verde {
+    background-color: #44d24a;
+    height: 450px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .logotestimonial {
+    float: right;
+    width: 80px;
+    height: 80px;
+    margin-top: 42px;
+  }
+  
+  .logotestimonial.logo01 {
+    background-image: url('../images/hlb-testimonial01.png');
+    background-size: cover;
+  }
+  
+  .logotestimonial.logo01.left {
+    float: left;
+    margin-top: 20px;
+  }
+  
+  .logotestimonial.logo02 {
+    background-image: url('../images/hlb-testimonial02.png'), linear-gradient(#3891ca, #3891ca);
+    background-size: cover, auto;
+    margin-left: 0;
+    position: relative;
+    left: 159px;
+  }
+  
+  .logotestimonial.logo02.left02 {
+    float: left;
+    margin-top: 0;
+    top: 21px;
+    left: -159px;
+    right: auto;
+  }
+  
+  .slider-verde {
+    background-color: rgba(0, 0, 0, 0);
+    height: 450px;
+    top: -121px;
+  }
+  
+  .testimonial {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+  }
+  
+  .testimonial01 {
+    color: rgba(255, 255, 255, .8);
+    margin-bottom: 2px;
+    font-family: Titillium Web, sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+  }
+  
+  .testimonial01.left {
+    float: left;
+    margin-top: -1px;
+    margin-left: 41px;
+    margin-right: 3px;
+    font-size: 30px;
+  }
+  
+  .testimonial02 {
+    color: rgba(255, 255, 255, .8);
+    margin-top: -4px;
+    margin-bottom: 67px;
+    font-family: Titillium Web, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .testimonial02.left {
+    margin-top: -1px;
+    margin-bottom: 51px;
+    font-family: Titillium Web, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .contariner-testimonial {
+    width: 70%;
+    margin-top: 38px;
+    margin-left: 56px;
+  }
+  
+  .contariner-testimonial.left {
+    width: 80%;
+    margin-top: 73px;
+    margin-left: 46px;
+  }
+  
+  .mask-testimonial {
+    height: auto;
+    top: auto;
+  }
+  
+  .arrow-testimonial {
+    display: none;
+  }
+  
+  .slidenav-testimonial {
+    float: none;
+    text-align: right;
+    padding-right: 12px;
+    font-size: 12px;
+  }
+  
+  .subrayado {
+    border-top: 1px #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-left: 1px #000;
+    border-right: 1px rgba(0, 0, 0, 0);
+    padding-bottom: 1px;
+  }
+  
+  .subrayado.blanco {
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+  }
+  
+  .subrayado.negro {
+    border-bottom-color: #3b3b3b;
+  }
+  
+  .row-servicios {
+    width: 100%;
+  }
+  
+  ._50 {
+    float: left;
+    width: 48%;
+    margin-left: 5px;
+  }
+  
+  .container-gris {
+    background-color: #4c4c4c;
+    width: 100%;
+    height: 450px;
+    display: block;
+  }
+  
+  .bg-verde {
+    background-color: #44d24a;
+    width: 100%;
+    height: 450px;
+  }
+  
+  .bg-video {
+    width: 100%;
+    height: 450px;
+  }
+  
+  .bg-video.hidrovideo {
+    background-image: url('../images/ver-videos-lim-hidrocinetica.jpg');
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  
+  .bg-video.flowvideo {
+    background-image: url('../images/ver-video.jpg');
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  
+  .bg-video.hidrocorte-video {
+    background-image: url('../images/ver-videos.jpg');
+  }
+  
+  .bg-video.limp-quimica-video {
+    background-image: url('../images/hlb-limpieza-quimica-video.jpg');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bg-video.especif {
+    background-image: url('../images/especificacion-tecnica-video.jpg');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  
+  .bg-video.montajevideo {
+    background-image: url('../images/montaje-industrial-video.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bg-video.andamiosvideo {
+    background-image: url('../images/montaje-video.jpg');
+    background-size: cover;
+  }
+  
+  .bg-video.inspeccionvideo {
+    background-image: url('../images/hlb-video-inspeccion.jpg');
+    background-size: cover;
+  }
+  
+  .container {
+    width: 100%;
+    height: 450px;
+    padding: 48px;
+  }
+  
+  .container50 {
+    float: left;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-style: none;
+    border-top-width: 0;
+    width: 50%;
+    height: 450px;
+    padding-top: 0;
+  }
+  
+  .container50.objetivo {
+    padding: 56px;
+  }
+  
+  .container50.objetivo.especif {
+    height: 750px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  
+  .container50.objetivo.andamios {
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+  
+  .container50.objetivo.hidrodecapado {
+    padding: 34px 18px;
+  }
+  
+  .container50.servicios-que-ofrecemos.right {
+    color: #ababab;
+    background-color: #f3f3f3;
+    height: 450px;
+  }
+  
+  .container50.bg-flecha {
+    background-color: rgba(0, 188, 205, .18);
+  }
+  
+  .container50.bg-flecha.sin-fondo {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .container50.lightbox-automatizado {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/limpieza-automatizada_1.jpg');
+    background-position: 0 0, 50% 0;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+  }
+  
+  .container50.lightbox-convencional {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/limpieza-convencional_1.jpg');
+    background-position: 0 0, 50%;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+  }
+  
+  .container50.txt {
+    height: auto;
+    padding: 54px 54px 0;
+  }
+  
+  .container50.txt.poco-texto {
+    padding-top: 105px;
+  }
+  
+  .container50.txt.inspe-ccion {
+    padding-top: 88px;
+  }
+  
+  .container50.lightbox-flow {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/servicios-hlb-hidrodecapado-de-superficies.jpg');
+    background-size: auto, cover;
+  }
+  
+  .container50.lightbox-flow02 {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/hlb-prepa-superficies02_1.jpg');
+    background-size: auto, cover;
+    transition: all 1s ease-in-out;
+  }
+  
+  .container50.lightbox-hidrocorte {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/hidrolavado.jpg');
+    background-position: 0 0, 50% 0;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    height: 750px;
+  }
+  
+  .container50.especif {
+    height: 750px;
+  }
+  
+  .container50.lightbox-haz {
+    background-image: url('../images/pattern-gris.png'), url('../images/servicios-hlb-extractor-de-mazo-peinemman.jpg');
+  }
+  
+  .container50.lightbox-implementos {
+    background-image: url('../images/pattern-gris.png'), url('../images/servicios-hlb-torqueo-de-presicion.jpg');
+  }
+  
+  .container50.lightbox-civil {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/servicios-hlb-andamios-civil.jpg');
+    background-size: auto, cover;
+  }
+  
+  .container50.lightbox-industrial {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/05.jpg');
+  }
+  
+  .container50.logos-footer {
+    height: auto;
+  }
+  
+  .container50.servicioflow {
+    background-color: #00bccd;
+    height: 550px;
+  }
+  
+  .container50.servicioflow.bg-sistema-flow {
+    background-image: url('../images/hlb-prepa-superficies01.jpg');
+    background-position: 26% 0;
+    background-size: cover;
+    height: 600px;
+    margin-top: -27px;
+  }
+  
+  .container50.servicioflow.bg-05 {
+    background-image: url('../images/hlb-andamios.jpg');
+    background-size: cover;
+    height: 800px;
+    margin-top: -264px;
+  }
+  
+  .container50.servicioflow.bg-montaje-ind {
+    background-image: url('../images/hlb-montaje-industrial.jpg');
+    background-size: cover;
+  }
+  
+  .container50.test-sistema-flow {
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  
+  .container50.test-sistema-flow.del-index {
+    width: 35%;
+    height: auto;
+  }
+  
+  .container50.hidrocorte {
+    background-color: #00bccd;
+    height: 600px;
+    margin-top: -101px;
+  }
+  
+  .container50.hidrocorte.bg-hidrocorte {
+    background-image: url('../images/hidrocorte.jpg');
+    background-size: cover;
+  }
+  
+  .container50.hidrocorte.bg-limp-quimica {
+    background-image: url('../images/hlb-limpieza-quimica-04.jpg');
+    background-position: 60% 0;
+  }
+  
+  .container50.hidrocorte.bg-especif {
+    background-image: url('../images/hlb-especificacion-tecnica.jpg');
+    background-size: cover;
+  }
+  
+  .container50.hidrocorte.bg-inspeccion {
+    background-image: url('../images/hlb-inspeccion.jpg');
+    background-size: cover;
+  }
+  
+  .container50.hidrocorte.bg-transporte2 {
+    background-image: url('../images/hlb-transporte02.jpg');
+    background-size: cover;
+    height: 788px;
+    margin-top: -435px;
+  }
+  
+  .container50.hidrocorte.bg-paradas {
+    float: left;
+    background-image: url('../images/servicios-hlb-paradas-de-planta.jpg');
+    background-position: 63% 62%;
+    background-size: auto;
+    width: 70%;
+  }
+  
+  .container50.hidrocorte.bg-paradas.index {
+    background-image: url('../images/pattern-gris.png'), url('../images/servicios-hlb-paradas-de-planta.jpg');
+    background-position: 0 0, 63% 62%;
+    background-size: auto, auto;
+    height: 750px;
+    margin-top: -55px;
+  }
+  
+  .container50.test-hidrocorte {
+    z-index: 999;
+    height: 402px;
+    min-height: 0;
+    position: relative;
+  }
+  
+  .container50.test-hidrocorte.last {
+    height: auto;
+  }
+  
+  .container50.test-hidrocorte.bg-paradas {
+    width: 29%;
+  }
+  
+  .container50.test-hidrocorte.bg-paradas.index {
+    height: auto;
+  }
+  
+  .container50._3ero {
+    background-color: #00bccd;
+    height: 900px;
+    margin-top: -124px;
+  }
+  
+  .container50._3ero.bg-hidrocinteica {
+    background-image: url('../images/hlb-limpieza-hidrocinetica.jpg');
+    background-size: cover;
+    margin-top: -287px;
+  }
+  
+  .container50._3ero.bg-transp01 {
+    background-image: url('../images/servicios-hlb-transporte.jpg');
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  
+  .container50.index-rotador {
+    background-color: #73dae4;
+    background-image: url('../images/pattern-gris-20.png');
+    width: 65%;
+    height: 550px;
+  }
+  
+  .container50.index-rotador.indexflow {
+    background-image: url('../images/pattern-gris.png'), url('../images/servicios-hlb-hidrodecapado-de-superficies.jpg');
+    background-position: 0 0, 24% 0;
+    background-size: auto, cover;
+  }
+  
+  .container50.index-rotador.indexhidrocorte {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/hidrolavado.jpg');
+    background-size: auto, cover;
+  }
+  
+  .container50.index-rotador.indexhidro {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/hlb-limpieza-hidrocinetica.jpg');
+    background-position: 0 0, 0 38%;
+    background-size: auto, cover;
+  }
+  
+  .container50.index-rotador.indexquimica {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/hlb-limpieza-quimica-04.jpg');
+    background-position: 0 0, 50%;
+    background-size: auto, auto;
+  }
+  
+  .container50.index-rotador.indexandamios {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/servicio-hlb-andamios-01.jpg');
+    background-position: 0 0, 0 0;
+  }
+  
+  .container50.index-rotador.indexespe {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/especificacion-tecnica-02.jpg');
+    background-position: 0 0, 50%;
+  }
+  
+  .container50.index-rotador.indexmontaje {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/montaje-industrial-02.jpg');
+  }
+  
+  .container50.index-rotador.indexensayos {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/hlb-inspeccion-01.jpg');
+    background-position: 0 0, 50% 0;
+  }
+  
+  .container50.index-rotador.indextransporte {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/servicios-hlb-transporte.jpg');
+    background-position: 0 0, 50%;
+    background-size: auto, cover;
+  }
+  
+  .no {
+    display: none;
+  }
+  
+  .over-fotos {
+    z-index: 10;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .titulo-flecha {
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 34px auto -43px;
+    font-family: Titillium Web, sans-serif;
+    font-size: 25px;
+    display: block;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .titulo-responsive {
+    display: none;
+  }
+  
+  .caract {
+    background-color: rgba(0, 188, 205, .18);
+    padding-top: 47px;
+    padding-bottom: 66px;
+  }
+  
+  .caract.verde {
+    background-color: rgba(68, 210, 74, .56);
+  }
+  
+  .caract.blue {
+    background-color: rgba(0, 188, 205, .34);
+    padding-top: 9%;
+    padding-bottom: 9%;
+  }
+  
+  .caract.color-verde {
+    background-color: #7cfc81;
+  }
+  
+  .container-data {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+  }
+  
+  .icon-div {
+    width: 60%;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .icon-div.target {
+    background-image: url('../images/noun_13011_cc.svg');
+    background-position: 50% 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 229px;
+  }
+  
+  .icon-div.mts {
+    background-image: url('../images/noun_41987_cc.svg');
+    background-position: 50% 4px;
+    background-size: cover;
+    height: 200px;
+    margin-top: 30px;
+  }
+  
+  .icon-div.explosion {
+    background-image: url('../images/explosion.svg');
+    background-position: 0 11%;
+    background-size: cover;
+    width: 52%;
+    height: 171px;
+  }
+  
+  .icon-div.icon-conentenedor {
+    background-image: url('../images/container_1.svg');
+    background-position: 100% 17%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 42%;
+    height: 171px;
+  }
+  
+  .inspeccion {
+    background-color: rgba(0, 0, 0, 0);
+    height: 450px;
+  }
+  
+  .inspeccion-container {
+    text-align: center;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 62px;
+    display: block;
+  }
+  
+  .inspeccion-container.alta {
+    padding-top: 30px;
+  }
+  
+  .nav-inspeccion {
+    color: #00bccd;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  
+  .inspeccion-icon {
+    color: #00bccd;
+  }
+  
+  .titulo-industrial {
+    color: #000;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #000;
+    margin-top: 31px;
+    margin-bottom: 28px;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .link {
+    color: #73dae4;
+    text-decoration: none;
+  }
+  
+  .certificacion-footer {
+    width: 60%;
+  }
+  
+  .rotate-iso {
+    width: 50%;
+  }
+  
+  .rotate-iso.more {
+    margin-bottom: 10px;
+  }
+  
+  .bg-empresa {
+    clear: both;
+    background-image: url('../images/servicios-hlb-la-empresa.jpg');
+    background-position: 50% 0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .empresa {
+    height: 100%;
+  }
+  
+  .heroslider {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('../images/pattern-gris.png');
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .heroslider.paradas-de-planta.hero-parada {
+    height: 100%;
+  }
+  
+  .text-scroll {
+    z-index: 900;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+  }
+  
+  .text-scroll.para-de-planta {
+    position: static;
+  }
+  
+  .slide-nav-empresa {
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    top: 0;
+    right: -67px;
+  }
+  
+  .empresa01 {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/servicios-hlb-nuestra-empresa.jpg');
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+  }
+  
+  .bg-verde-empresa {
+    z-index: 800;
+    background-color: #3891ca;
+    width: auto;
+    height: 400px;
+    padding-top: 14px;
+    padding-left: 22px;
+    padding-right: 22px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .bg-verde-empresa.abajo {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .container-empresa {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .empresa-icon-container {
+    text-align: center;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  
+  .empresa-icon-container.none-momentaneo {
+    flex-flow: column;
+    align-items: center;
+    display: flex;
+  }
+  
+  .icon-empresa {
+    text-align: center;
+    width: 140px;
+  }
+  
+  .icon-empresa.full {
+    width: 81%;
+  }
+  
+  .icon-empresa.full.iso {
+    width: 50%;
+  }
+  
+  .icon-empresa.full.isoimagen {
+    width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  
+  ._33 {
+    float: left;
+    width: 33.33%;
+    height: 550px;
+    padding: 207px 63px;
+  }
+  
+  ._33.bg01 {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/hlb-bg01.jpg');
+    background-position: 0 0, 50%;
+  }
+  
+  ._33.bg02 {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/hlb-bg02.jpg');
+    background-size: auto, cover;
+  }
+  
+  ._33.bg03 {
+    background-image: url('../images/pattern-gris-20.png'), url('../images/hlb-bg03.jpg');
+    background-size: auto, cover;
+  }
+  
+  .titulo-33 {
+    color: #fff;
+    border-bottom-style: solid;
+    margin-bottom: 24px;
+    padding-bottom: 9px;
+    font-family: Titillium Web, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .section-empresa {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .section-empresa.iso-gris {
+    background-color: rgba(223, 223, 223, .09);
+  }
+  
+  .testimonial-empresa {
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .iso {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .29);
+  }
+  
+  .iso.index {
+    margin-top: -34px;
+  }
+  
+  .empresa-solo {
+    display: none;
+  }
+  
+  .scroll {
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .img-flecha {
+    margin-top: -1px;
+    margin-left: 7px;
+    margin-right: 9px;
+  }
+  
+  .hq {
+    z-index: 999;
+    background-color: #00bccd;
+    width: 400px;
+    height: auto;
+    margin-top: -300px;
+    margin-bottom: 38px;
+    margin-left: 57px;
+    padding: 20px;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .social {
+    width: 100%;
+    height: auto;
+  }
+  
+  .contacto {
+    background-color: #00bccd;
+  }
+  
+  .contact-form {
+    z-index: 950;
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .field-label {
+    float: left;
+    clear: none;
+    color: rgba(0, 0, 0, .72);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+  }
+  
+  .form {
+    padding-left: 61px;
+    padding-right: 61px;
+  }
+  
+  .text-field {
+    float: left;
+    clear: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-style: none;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, .7);
+    border-left-style: none;
+    border-right-style: none;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    padding-left: 39px;
+    transition: all .5s ease-in-out;
+  }
+  
+  .text-field::placeholder {
+    color: var(--white-smoke);
+  }
+  
+  .text-field.last {
+    clear: right;
+  }
+  
+  .text-field.nombre {
+    background-image: url('../images/nombre-01-01.svg');
+    background-position: 0 39%;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    font-family: Montserrat, sans-serif;
+    transition: all .5s ease-in-out;
+  }
+  
+  .text-field.nombre::placeholder {
+    color: var(--white-smoke);
+  }
+  
+  .text-field.email {
+    background-image: url('../images/email-01-01.svg');
+    background-position: 0 33%;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .text-field.asunto {
+    background-image: url('../images/asunto-01.svg');
+    background-position: 0 32%;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    border-bottom-color: rgba(255, 255, 255, .7);
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .text-field.consulta {
+    background-image: url('../images/consulta-01.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    padding-top: 8px;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .submit {
+    float: left;
+  }
+  
+  .form-section {
+    background-color: #00bccd;
+    height: auto;
+    padding-bottom: 65px;
+  }
+  
+  .form-section.exito {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('../images/pattern-gris.png'), url('../images/bg-exito-01.jpg');
+    background-size: auto, cover;
+    border-bottom-width: 11px;
+    border-bottom-color: #00bccd;
+    width: auto;
+    height: 100%;
+    padding-bottom: 111px;
+    position: static;
+  }
+  
+  .form-wrapper {
+    margin-top: 62px;
+  }
+  
+  ._50-form {
+    float: left;
+    width: 33.3%;
+    padding: 26px 13px;
+  }
+  
+  ._50-form._100 {
+    width: 100%;
+  }
+  
+  .submit-buttom {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 15px;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    transition: all .995s ease-in-out;
+  }
+  
+  .submit-buttom:hover {
+    color: rgba(0, 0, 0, .6);
+    border-color: rgba(0, 0, 0, .6);
+  }
+  
+  .contacto-title {
+    color: #000;
+    text-align: center;
+    margin-top: 162px;
+    font-family: Titillium Web, sans-serif;
+    font-size: 49px;
+    font-weight: 200;
+  }
+  
+  .contacto-title.de-contacto {
+    font-size: 36px;
+  }
+  
+  .contacto-title.de-contacto.exito {
+    float: left;
+    color: #fff;
+    text-align: left;
+    margin-top: 0;
+    display: block;
+  }
+  
+  .bold {
+    color: #000;
+    font-weight: 700;
+  }
+  
+  .bold.exito {
+    color: #fff;
+  }
+  
+  .succes {
+    color: rgba(0, 0, 0, .49);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 39px;
+  }
+  
+  .error-message {
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: -1px;
+  }
+  
+  .error-txt {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+  }
+  
+  .bajada {
+    color: #000;
+    text-align: center;
+    width: auto;
+    padding-left: 102px;
+    padding-right: 102px;
+    font-family: Roboto, sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 23px;
+  }
+  
+  .bajada.paradas {
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 28px;
+  }
+  
+  .bajada.paradas.deplanta {
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 300;
+  }
+  
+  .bajada.paradas.deplanta.bco {
+    color: #fff;
+  }
+  
+  .container-titulo {
+    text-align: center;
+  }
+  
+  .section-servicios {
+    text-align: center;
+    margin-bottom: 155px;
+  }
+  
+  .nuestros-servicios {
+    background-color: #fff;
+  }
+  
+  .container-flow {
+    z-index: 999;
+    background-color: #fff;
+    width: 400px;
+    padding: 57px 35px 43px;
+    transition: all 1s ease-in-out;
+    position: relative;
+    top: 29px;
+    left: 108px;
+    right: auto;
+  }
+  
+  .container-flow:hover {
+    background-color: #00bccd;
+  }
+  
+  .container-flow.hidrocorte {
+    width: 500px;
+    padding-top: 45px;
+    transition-duration: 1.178s;
+    top: 91px;
+    left: -156px;
+  }
+  
+  .container-flow.hidrocorte:hover {
+    background-color: #44d24a;
+  }
+  
+  .container-flow.hidrocorte.del-medio {
+    padding-top: 79px;
+    top: -1px;
+  }
+  
+  .container-flow.hidrocorte.last {
+    margin-top: -48px;
+  }
+  
+  .container-flow._3ero {
+    width: 535px;
+    padding-top: 100px;
+    padding-right: 69px;
+    top: 0;
+  }
+  
+  .container-flow._3ero.hidro {
+    margin-top: 182px;
+  }
+  
+  .container-flow.medio {
+    width: 500px;
+    top: 0;
+    left: 179px;
+  }
+  
+  .container-flow.abajo {
+    width: 500px;
+    margin-top: 32px;
+  }
+  
+  .container-flow.paradas-de-planta-bg {
+    width: 600px;
+    padding-top: 30px;
+    top: 59px;
+    left: -318px;
+  }
+  
+  .container-flow.paradas-de-planta-bg:hover {
+    background-color: #44d24a;
+  }
+  
+  .container-flow.paradas-de-planta-bg.index {
+    border: 1px solid rgba(0, 0, 0, .09);
+    top: 21px;
+    left: -326px;
+  }
+  
+  .container-flow.del-rotador {
+    background-color: #f4f4f4;
+    width: 470px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    top: 60px;
+    left: 50px;
+  }
+  
+  .container-flow.del-rotador._1 {
+    border-bottom: 4px solid #3891ca;
+  }
+  
+  .container-flow.del-rotador._2 {
+    border-bottom: 4px solid #44d24a;
+  }
+  
+  .titulo-del-servicio {
+    font-family: Titillium Web, sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 28px;
+  }
+  
+  .titulo-del-servicio.solo-del-fixed {
+    float: right;
+    color: #fff;
+    text-align: right;
+    margin-bottom: 32px;
+    font-size: 42px;
+    line-height: 35px;
+  }
+  
+  .alwyn {
+    font-family: Titillium Web, sans-serif;
+    font-size: 37px;
+    font-weight: 700;
+  }
+  
+  .alwyn.index.solo-del-fixed {
+    border-bottom: 6px solid #fff;
+    font-size: 42px;
+    line-height: 36px;
+  }
+  
+  .ampliar-servicio {
+    float: left;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .ampliar {
+    float: left;
+    clear: left;
+    color: #6e6e6e;
+    margin-right: 10px;
+    font-family: Montserrat, sans-serif;
+    transition: all .5s;
+  }
+  
+  .ampliar:hover {
+    color: #fff;
+    transform: translate(5px);
+  }
+  
+  .ampliar.index {
+    color: #000;
+  }
+  
+  .flecha-ampliar {
+    float: left;
+    clear: none;
+    width: 25px;
+    margin-top: 8px;
+    margin-left: 0;
+    transition: all .5s;
+    display: block;
+  }
+  
+  .quote {
+    float: left;
+    text-align: left;
+    padding: 86px 25px 43px;
+  }
+  
+  .bloqquote {
+    text-align: left;
+    text-indent: 50px;
+    margin-top: 1px;
+    font-family: Titillium Web, sans-serif;
+    font-size: 21px;
+    font-style: italic;
+    line-height: 33px;
+  }
+  
+  .img-quote {
+    float: left;
+    clear: none;
+    width: 100px;
+    height: 98px;
+    margin-top: -66px;
+  }
+  
+  .primero {
+    margin-top: -53px;
+    padding-bottom: 126px;
+  }
+  
+  .primero.last {
+    padding-bottom: 0;
+  }
+  
+  .llamado {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .googleplus {
+    float: left;
+    margin-top: 19px;
+  }
+  
+  .facebook-img, .addthis {
+    display: none;
+  }
+  
+  .footer-flyout {
+    z-index: 998;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .contacto-img {
+    float: left;
+    margin-right: 3px;
+    display: block;
+    transform: translate(-26px, 85px);
+  }
+  
+  .contacto-bg {
+    float: left;
+    background-color: #95a5a6;
+    border-radius: 10px;
+    width: 72%;
+    margin-top: 6px;
+    padding: 20px 23px 15px;
+    transform: translate(0, -64px);
+    box-shadow: 0 1px #000;
+  }
+  
+  .contacto-bg.flecha {
+    box-shadow: none;
+    border-radius: 0;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    padding: 0;
+    transform: translate(15px, 74px)rotate(-46deg);
+  }
+  
+  .container-contacto-footer {
+    margin-top: 15px;
+    transform: translate(-38px, 86px);
+  }
+  
+  ._50-sticky {
+    float: left;
+    clear: none;
+    width: 37%;
+    margin-right: 16px;
+  }
+  
+  ._50-sticky.last {
+    float: left;
+    width: auto;
+    margin-right: 0;
+  }
+  
+  .form-sticky {
+    width: auto;
+  }
+  
+  .sticky {
+    float: none;
+    color: #3b3b3b;
+  }
+  
+  .container-exito {
+    float: left;
+    margin-top: 165px;
+    position: relative;
+  }
+  
+  .sep-exito {
+    background-color: #fff;
+    width: 60%;
+    height: 2px;
+    margin-top: 31px;
+    margin-bottom: 13px;
+    display: none;
+  }
+  
+  .comparti-ti-experiencia {
+    float: none;
+    clear: left;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  .exito-facebook {
+    float: left;
+    width: auto;
+    margin-left: 4px;
+    margin-right: -1px;
+    display: inline-block;
+  }
+  
+  .exityo-twitter {
+    float: left;
+    margin-top: -3px;
+    margin-left: 4px;
+    margin-right: 10px;
+    top: 2px;
+  }
+  
+  .exito-gplus {
+    margin-left: 4px;
+    margin-right: 4px;
+    display: inline-block;
+  }
+  
+  .sidebar-servicios {
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 50px;
+    max-height: 400px;
+    margin-top: -200px;
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    right: 10px;
+  }
+  
+  .dummy {
+    width: 50px;
+    height: 50px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+  }
+  
+  .square-button {
+    text-align: right;
+    border: 5px solid #000;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    transition: all .2s;
+    display: block;
+  }
+  
+  .square-button.azul:hover {
+    border-color: #73dae4;
+  }
+  
+  .square-button.azul.w--current {
+    clear: none;
+  }
+  
+  .square-button.azul.w--current:hover {
+    border-color: #73dae4;
+  }
+  
+  .square-button.verde {
+    background-color: rgba(0, 0, 0, 0);
+    width: 50px;
+    height: 50px;
+    padding-left: 0;
+  }
+  
+  .square-button.verde:hover {
+    border-color: #44d24a;
+  }
+  
+  .sidebar-text {
+    float: right;
+    text-align: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 17px;
+    width: auto;
+    padding: 6px 10px 5px;
+    font-family: Montserrat, sans-serif;
+    font-size: 9.5px;
+    line-height: 10px;
+    display: inline;
+    position: relative;
+    top: -37px;
+    bottom: 32px;
+    left: -60px;
+    right: 0;
+  }
+  
+  .heatmap {
+    display: none;
+  }
+  
+  .subir {
+    float: right;
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 33px;
+  }
+  
+  .img-subir {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .google-map {
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .trabaja-con-nosotros {
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 93px;
+    padding-bottom: 39px;
+    font-family: Just Another Hand, sans-serif;
+    font-size: 41px;
+    position: relative;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+  }
+  
+  .trabaja-con-nosotros.en-section {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  
+  .trabaja-con-nosotros.cd-contacto {
+    margin-top: 102px;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: static;
+  }
+  
+  .form-link {
+    color: rgba(0, 0, 0, .29);
+  }
+  
+  .texto-trabaja-con-nosotros {
+    float: left;
+  }
+  
+  .texto-trabaja-con-nosotros.contact-page {
+    margin-bottom: 22px;
+  }
+  
+  .empleos {
+    background-color: #44d24a;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    box-shadow: inset 0 -1px 12px rgba(0, 0, 0, .27);
+  }
+  
+  .queres-trabajar {
+    float: left;
+    width: 152px;
+    height: 135px;
+    margin-top: -40px;
+    margin-right: -1px;
+  }
+  
+  .strong {
+    font-weight: 700;
+  }
+  
+  .ver-su-web {
+    color: #000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #000;
+    margin-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+  }
+  
+  .ingysol {
+    width: 50%;
+    margin-top: 23px;
+    margin-left: 147px;
+    padding-left: 0;
+  }
+  
+  ._2row {
+    margin-top: 63px;
+  }
+  
+  .transport-image {
+    height: 178px;
+  }
+  
+  .parada-de-planta {
+    background-image: url('../images/pattern-gris-20.png'), linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .4)), url('../images/servicios-hlb-paradas-de-planta.jpg');
+    background-size: auto, auto, cover;
+  }
+  
+  .parada-de-planta._00 {
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .4)), url('../images/pattern-gris-20.png'), url('../images/servicios-hlb-paradas-de-planta-02.jpg');
+    background-position: 0 0, 0 0, 50% 0;
+    background-size: auto, auto, cover;
+  }
+  
+  .parada-de-planta._01 {
+    background-image: url('../images/pattern-gris-20.png'), linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url('../images/servicios-hlb-transporte-industrial-home03.jpg');
+    background-position: 0 0, 0 0, 0 0;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+  }
+  
+  .container-parada-de-planta {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .container-parada-de-planta.bottom {
+    height: 30px;
+    padding-top: 5px;
+    position: absolute;
+    top: auto;
+    bottom: 95px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  
+  .conoce-mas {
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Roboto, sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .icon-conoce-mas {
+    margin-top: 10px;
+  }
+  
+  .img-conoce-mas {
+    z-index: 10;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    top: -105px;
+  }
+  
+  .bg-azul {
+    background-color: #3891ca;
+    border-top: 6px solid #2d7cad;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .txt-container-paradas {
+    margin-top: -123px;
+  }
+  
+  .flecha-azul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    top: 34px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .para-txt-condensed {
+    background-color: #e9e9e9;
+    margin-bottom: 0;
+    padding-top: 57px;
+    padding-bottom: 0;
+  }
+  
+  .para-txt-condensed.de-limpieza {
+    border-bottom: 8px solid rgba(0, 0, 0, 0);
+    padding-bottom: 29px;
+  }
+  
+  .h1-small {
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 8px auto 80px;
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .primer-columna {
+    float: left;
+    border-right: 1px dashed rgba(112, 112, 112, .36);
+    width: 49.5%;
+    padding-right: 20px;
+  }
+  
+  .primer-columna.last {
+    border-right-style: none;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  
+  .li-condensed {
+    border-bottom: 1px dashed rgba(112, 112, 112, .36);
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+  
+  .li-condensed.last {
+    border-bottom-style: none;
+  }
+  
+  .circulo {
+    float: left;
+    border: 3px solid #000;
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+    margin-top: -2px;
+    margin-left: 15px;
+  }
+  
+  .circulo.celeste-li {
+    border-color: #73dae4;
+  }
+  
+  .circulo.verde-li {
+    border-color: #44d24a;
+  }
+  
+  .h2-li-condensed {
+    float: none;
+    color: #000;
+    letter-spacing: -1px;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    display: block;
+  }
+  
+  .container-ciculo {
+    float: left;
+    height: auto;
+    min-height: 50px;
+    margin-right: 16px;
+  }
+  
+  .container-ciculo._2-lineas {
+    height: 117px;
+  }
+  
+  .container-ciculo._6lineas {
+    min-height: 230px;
+  }
+  
+  .container-txt-li {
+    padding-right: 20px;
+    display: block;
+  }
+  
+  .container-txt-li.right {
+    padding-right: 28px;
+  }
+  
+  .txt-li {
+    float: none;
+    color: #4c4c4c;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  
+  .container-2-col {
+    margin-bottom: 0;
+  }
+  
+  .end-condensed {
+    z-index: 10;
+    text-align: center;
+    width: 150px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    top: -51px;
+    bottom: 0;
+    left: -6px;
+    right: 0;
+  }
+  
+  .clientes-paradas {
+    float: left;
+    width: 33.3%;
+    margin-top: 0;
+  }
+  
+  .cliente01 {
+    background-color: rgba(0, 0, 0, 0);
+    border: 9px solid #fff;
+    width: 100%;
+  }
+  
+  .cliente01._1col {
+    background-image: url('../images/servicios-hlb-cliente-solvay.jpg');
+    background-position: 95%;
+    background-size: cover;
+    height: 900px;
+  }
+  
+  .cliente01._2col {
+    height: 450px;
+  }
+  
+  .cliente01._2col.pan {
+    background-image: url('../images/servicios-hlb-cliente-pan.jpg');
+    background-size: cover;
+  }
+  
+  .cliente01._2col.refinor {
+    background-image: url('../images/servicios-hlb-cliente-refinor.jpg');
+    background-size: cover;
+  }
+  
+  .cliente01._3col {
+    height: 300px;
+  }
+  
+  .cliente01._3col.dow {
+    background-image: url('../images/servicios-hlb-cliente-dow.jpg');
+    background-size: cover;
+  }
+  
+  .cliente01._3col.profertil {
+    background-image: url('../images/servicios-hlb-cliente-profertil.jpg');
+    background-size: cover;
+  }
+  
+  .cliente01._3col.total {
+    background-image: url('../images/servicios-hlb-cliente-total.jpg');
+    background-size: cover;
+  }
+  
+  .contenedor-clientes-paradas {
+    width: 100%;
+  }
+  
+  .negativo {
+    background-color: #fff;
+    margin-top: -135px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .contenedor-detalle-clientes {
+    float: none;
+    width: 93%;
+    position: relative;
+    bottom: 0;
+    left: 20px;
+    overflow: visible;
+  }
+  
+  .contenedor-detalle-clientes._1 {
+    top: 720px;
+  }
+  
+  .contenedor-detalle-clientes._2 {
+    top: 268px;
+  }
+  
+  .contenedor-detalle-clientes._3 {
+    top: 115px;
+  }
+  
+  .logo-cliente {
+    border-radius: 200px;
+    width: 60px;
+    margin-left: 12px;
+  }
+  
+  .contenedor-detalles-bg-verde {
+    background-color: #44d24a;
+    width: 72%;
+    margin-top: -23px;
+    padding: 28px 10px 9px;
+    box-shadow: -8px 8px #000;
+  }
+  
+  .contenedor-detalles-bg-verde.dow {
+    width: 98%;
+  }
+  
+  .detalle01 {
+    float: left;
+    color: #000;
+    text-align: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 53px;
+    margin-right: 6px;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+  }
+  
+  .detalle02 {
+    float: left;
+    color: #000;
+    margin-top: -1px;
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 13px;
+  }
+  
+  .link-paradas {
+    color: #000;
+    text-decoration: none;
+    transition: all .5s;
+  }
+  
+  .link-paradas:hover {
+    color: #00bccd;
+    border-bottom: 1px solid #00bccd;
+  }
+  
+  .paradas-de-planta {
+    height: auto;
+    padding-top: 26px;
+  }
+  
+  .bolder {
+    letter-spacing: -2px;
+    font-family: Titillium Web, sans-serif;
+    font-weight: 700;
+  }
+  
+  .h1-limpiezas {
+    text-align: center;
+    letter-spacing: -.5px;
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Titillium Web, sans-serif;
+    font-size: 43px;
+    font-weight: 300;
+    display: block;
+  }
+  
+  .strong-quimicas {
+    font-weight: 700;
+  }
+  
+  .bajadas-quimicas {
+    text-align: center;
+    margin-bottom: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 147px;
+    padding-right: 147px;
+    font-family: Roboto, sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 26px;
+    display: block;
+  }
+  
+  .section-video {
+    width: auto;
+    height: 100%;
+    min-height: 900px;
+    display: none;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .video-boy {
+    height: 100%;
+    margin-top: -2px;
+    display: block;
+  }
+  
+  .home {
+    background-color: #f4f4f4;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .overlay-bottom {
+    z-index: 999;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .bottom-fixed {
+    background-image: url('../images/pattern.png'), linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/servicios-hlb-home.jpg');
+    background-position: 0 0, 0 0, 50% 100%;
+    background-size: auto, auto, auto;
+    background-attachment: scroll, scroll, fixed;
+    border-bottom: 3px solid rgba(0, 0, 0, .27);
+    height: 600px;
+    margin-top: -49px;
+  }
+  
+  .bottom-fixed.transporte {
+    background-image: url('../images/pattern.png'), linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/servicios-hlb-transporte-de-residuos.jpg');
+    background-position: 0 0, 0 0, 50% 0;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    margin-bottom: 56px;
+  }
+  
+  .container-social {
+    padding: 9px 0;
+    overflow: hidden;
+  }
+  
+  .video {
+    width: 96%;
+  }
+  
+  .video-container {
+    margin-top: 3px;
+  }
+  
+  .ppales-servicios {
+    background-color: #f4f4f4;
+    margin-top: 10px;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  
+  .container-title-ppales-servicios {
+    margin-top: 62px;
+  }
+  
+  .container-title-ppales-servicios.news {
+    float: none;
+    clear: none;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  
+  .verde {
+    background-color: #3891ca;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .verde.ppales {
+    float: right;
+    clear: none;
+    text-align: right;
+    width: 70px;
+    height: 70px;
+    padding: 3px;
+  }
+  
+  .icon-index {
+    width: 100%;
+  }
+  
+  .azul-index {
+    background-color: #44d24a;
+    height: 70px;
+  }
+  
+  .azul-index.ppales-txt {
+    float: right;
+    width: 336px;
+    padding: 23px 9px;
+  }
+  
+  .azul-index.ppales-txt.news {
+    float: left;
+    width: 350px;
+  }
+  
+  .azul-index.ppales-txt.news.index {
+    float: left;
+  }
+  
+  .link-ppales {
+    float: left;
+    text-align: center;
+    width: 30px;
+    height: 100%;
+    margin-top: -2px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .link-ppales.news {
+    float: right;
+  }
+  
+  .img-index-link {
+    transition: all .5s;
+  }
+  
+  .img-index-link:hover {
+    transform: scale(.86)translate(0);
+  }
+  
+  .titles-index {
+    color: #fff;
+    text-align: right;
+    padding-right: 0;
+    font-family: Titillium Web, sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+  }
+  
+  .titles-index.news {
+    text-align: left;
+  }
+  
+  .titles-index.news.social-title {
+    float: left;
+    font-size: 36px;
+  }
+  
+  .tapador-inclinado {
+    z-index: 999;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .rotador-container {
+    margin-top: 0;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide.home1 {
+    background-image: url('../images/pattern.png'), url('../images/servicios-hlb-limpieza-y-mantenimiento-industrial-03.jpg');
+    background-position: 0 0, 0 0;
+    background-size: 1px, cover;
+  }
+  
+  .slide.home2 {
+    background-image: url('../images/pattern.png'), url('../images/servicios-hlb-limpieza-y-mantenimiento-industrial-02.jpg');
+    background-position: 0 0, 0 0;
+    background-size: 1px, cover;
+  }
+  
+  .slide.home3 {
+    background-image: url('../images/pattern.png'), url('../images/servicios-hlb-limpieza-y-mantenimiento-industrial-04.jpg');
+    background-position: 0 0, 0 0;
+    background-size: 1px, cover;
+  }
+  
+  .slide.home4 {
+    background-image: url('../images/pattern.png'), url('../images/servicios-hlb-limpieza-y-mantenimiento-industrial-01.jpg');
+    background-position: 0 0, 0 0;
+    background-size: 1px, cover;
+  }
+  
+  .slide.home5 {
+    background-image: url('../images/pattern.png'), url('../images/servicios-hlb-limpieza-y-mantenimiento-industrial-05.jpg');
+    background-position: 0 0, 0 0;
+    background-size: 1px, cover;
+  }
+  
+  .slide.home6 {
+    background-image: url('../images/pattern.png'), url('../images/servicios-hlb-limpieza-y-mantenimiento-industrial-06.jpg');
+    background-position: 0 0, 0 0;
+    background-size: 1px, cover;
+  }
+  
+  .slide.home0 {
+    background-image: url('../images/pattern.png'), url('../images/servicios-hlb-transporte.jpg');
+    background-position: 0 0, 0 0;
+    background-size: 1px, cover;
+  }
+  
+  .slide.home07 {
+    background-image: url('../images/pattern-gris.png'), url('../images/servicios-hlb-transporte-industrial-home01.jpg');
+    background-position: 0 0, 0 0;
+    background-repeat: repeat, no-repeat;
+    background-size: 1px, cover;
+  }
+  
+  .slide.home08 {
+    background-image: url('../images/pattern.png'), url('../images/servicios-hlb-transporte-industrial-home02.jpg');
+    background-position: 0 0, 0 0;
+    background-size: 1px, cover;
+  }
+  
+  .slide.home09 {
+    background-image: url('../images/pattern-gris.png'), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url('../images/servicios-hlb-transporte-industrial-home03.jpg');
+    background-position: 0 0, 0 0, 0 0;
+    background-size: 1px, auto, cover;
+  }
+  
+  .slider-index {
+    background-color: rgba(0, 0, 0, 0);
+    height: 550px;
+    margin-top: 0;
+  }
+  
+  .right-arrow-index {
+    opacity: .37;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .5s;
+    display: block;
+    position: relative;
+    top: -80px;
+    bottom: 0;
+    left: -223px;
+    right: 0;
+  }
+  
+  .right-arrow-index:hover {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  
+  .right-arrow-index.left {
+    float: left;
+    opacity: .25;
+    width: 30px;
+    height: 30px;
+    top: -74px;
+    left: 208px;
+  }
+  
+  .right-arrow-index.left:hover {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  
+  .slide-nav-index {
+    display: none;
+  }
+  
+  .bg-container-icons {
+    background-color: #3891ca;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .bg-container-icons.ppales {
+    float: right;
+    text-align: right;
+    padding: 3px;
+  }
+  
+  .bg-container-icons.ppales.news {
+    float: none;
+    clear: both;
+    display: inline-block;
+  }
+  
+  .bg-container-icons.ppales.news.index {
+    float: none;
+    clear: none;
+    display: block;
+  }
+  
+  .news-section {
+    background-color: #f4f4f4;
+    padding-top: 0;
+    padding-bottom: 82px;
+  }
+  
+  .social-section {
+    height: 400px;
+    margin-bottom: 103px;
+    padding-bottom: 0;
+  }
+  
+  .bg-verde-claro {
+    background-color: #7cfc81;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .container-social-index {
+    margin-top: -355px;
+    overflow: visible;
+  }
+  
+  .conentedor-titles-social {
+    margin-bottom: 20px;
+  }
+  
+  .ballon {
+    float: right;
+    width: 200px;
+    margin-top: -160px;
+    margin-right: -39px;
+  }
+  
+  .ballon-img {
+    width: 100%;
+  }
+  
+  .flecha-social {
+    margin-top: -111px;
+  }
+  
+  .angle-overlay {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  
+  .img-angle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .container-blockquote {
+    float: right;
+    width: 70%;
+    margin-top: 173px;
+  }
+  
+  .dos-puntos {
+    float: right;
+    color: #fff;
+    text-align: right;
+    font-family: Titillium Web, sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+  
+  .iframe-video {
+    border: 1px solid rgba(0, 0, 0, .2);
+  }
+  
+  .div-responsive-home {
+    display: none;
+  }
+  
+  .tapador {
+    background-image: url('../images/pattern-gris-20.png');
+    background-size: 1px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+  
+  .loading {
+    float: none;
+    background-color: #44d24a;
+    width: 100%;
+    height: 100vh;
+    padding-left: 8.333%;
+    padding-right: 8.333%;
+    display: none;
+    overflow: visible;
+  }
+  
+  .loading-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    top: 30%;
+    overflow: hidden;
+  }
+  
+  .loading-text {
+    float: left;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    font-family: Montserrat, sans-serif;
+    line-height: 14px;
+  }
+  
+  .loading-linea-blanca {
+    background-color: #fff;
+    height: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  
+  .loading-h1 {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: Titillium Web, sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+  }
+  
+  .loading-bold {
+    font-weight: 700;
+  }
+  
+  .loading-h2 {
+    color: #fff;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  
+  .loading-puntos {
+    margin-top: 19px;
+  }
+  
+  .ie-fix {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .firefox-fix {
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .fix {
+    margin-top: -13px;
+    overflow: hidden;
+  }
+  
+  .link-transpor {
+    float: right;
+  }
+  
+  .emergencias {
+    color: rgba(0, 0, 0, .4);
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .emergencias-footer {
+    color: #cd1337;
+  }
+  
+  .aviso {
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, .8);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 12%;
+    display: none;
+    position: fixed;
+  }
+  
+  .inner-de-aviso {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 6%;
+    position: relative;
+  }
+  
+  .btn-cerrar {
+    cursor: pointer;
+    position: absolute;
+    top: 1.5%;
+    bottom: auto;
+    left: auto;
+    right: 1.5%;
+  }
+  
+  .img-brn-cerrar {
+    cursor: pointer;
+  }
+  
+  .proboto, .p-aviso {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+  }
+  
+  html.w-mod-js [data-ix="fade-in"], html.w-mod-js [data-ix="fade-in-2"] {
+    opacity: 0;
+  }
+  
+  html.w-mod-js [data-ix="fade-header"] {
+    opacity: 0;
+    transform: translate(0, -100px);
+  }
+  
+  html.w-mod-js [data-ix="fade-in-3"], html.w-mod-js [data-ix="fade-in-4"] {
+    opacity: 0;
+    transform: translate(0, 40px);
+  }
+  
+  html.w-mod-js [data-ix="scale-on-scroll"], html.w-mod-js [data-ix="scale-on-scroll-2"] {
+    opacity: 0;
+    transform: scale(.8);
+  }
+  
+  html.w-mod-js [data-ix="from-left-scroll"], html.w-mod-js [data-ix="from-right-scroll-2"] {
+    opacity: 0;
+  }
+  
+  html.w-mod-js [data-ix="fade-in-1"], html.w-mod-js [data-ix="fade-in-300s"], html.w-mod-js [data-ix="fade-in-600s"] {
+    opacity: 0;
+    transform: translate(0, -15px);
+  }
+  
+  html.w-mod-js [data-ix="fade-scroll"] {
+    opacity: 0;
+  }
+  
+  html.w-mod-js [data-ix="phto-icon"] {
+    opacity: 0;
+    transform: translate(0, 24px)scale(.82);
+  }
+  
+  html.w-mod-js [data-ix="fade-in-900"] {
+    opacity: 0;
+    transform: translate(0, -15px);
+  }
+  
+  html.w-mod-js [data-ix="fade-de-abajo"] {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+  
+  html.w-mod-js [data-ix="appear-azul"], html.w-mod-js [data-ix="appear-azul-2"], html.w-mod-js [data-ix="appear-azul-3"], html.w-mod-js [data-ix="appear-azul-4"] {
+    opacity: 0;
+    transform: translate(0, -15px);
+  }
+  
+  html.w-mod-js [data-ix="fade-down"] {
+    opacity: 0;
+    transform: translate(0, -70px);
+  }
+  
+  html.w-mod-js [data-ix="fade-de-abajo-2"] {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+  
+  html.w-mod-js [data-ix="form-responsive"] {
+    opacity: 0;
+    transform: translate(200px);
+  }
+  
+  html.w-mod-js [data-ix="fade-footer"] {
+    opacity: .25;
+    transform: translate(0, 100px);
+  }
+  
+  html.w-mod-js [data-ix="form-en-scroll"] {
+    display: none;
+    transform: translate(0, 150px);
+  }
+  
+  html.w-mod-js [data-ix="sidebar-icons-especif"] {
+    transform: scale(.25);
+  }
+  
+  html.w-mod-js [data-ix="nav-on-load"] {
+    opacity: 0;
+    display: none;
+    transform: scale(.01);
+  }
+  
+  html.w-mod-js [data-ix="load-sidebar"] {
+    opacity: 0;
+    display: none;
+    transform: translate(50px);
+  }
+  
+  html.w-mod-js [data-ix="hidden-sidebar-text"], html.w-mod-js [data-ix="hidden-sidebar-text-2"], html.w-mod-js [data-ix="hidden-sidebar-text-3"], html.w-mod-js [data-ix="hidden-sidebar-text-4"], html.w-mod-js [data-ix="hidden-sidebar-text-5"], html.w-mod-js [data-ix="hidden-sidebar-text-6"], html.w-mod-js [data-ix="hidden-sidebar-text-7"], html.w-mod-js [data-ix="hidden-sidebar-text-8"], html.w-mod-js [data-ix="hidden-sidebar-text-9"] {
+    opacity: .75;
+    transform: translate(18px);
+  }
+  
+  html.w-mod-js [data-ix="flecha-subir"] {
+    display: none;
+    transform: translate(0, 150px);
+  }
+  
+  html.w-mod-js [data-ix="appear-arriba"], html.w-mod-js [data-ix="appear-arriba-2"] {
+    opacity: 0;
+    transform: translate(0, -30px);
+  }
+  
+  html.w-mod-js [data-ix="appear-arriba-3"] {
+    opacity: 0;
+    transform: translate(0, -45px);
+  }
+  
+  html.w-mod-js [data-ix="load-de-abajo"] {
+    opacity: 0;
+    transform: translate(0, 66px);
+  }
+  
+  html.w-mod-js [data-ix="load-fade"] {
+    opacity: 0;
+  }
+  
+  html.w-mod-js [data-ix="mostrar-sidebar-paradas"] {
+    opacity: 0;
+    transform: scale(.5);
+  }
+  
+  html.w-mod-js [data-ix="hidden-sidebar-text-10"] {
+    opacity: .75;
+    transform: translate(18px);
+  }
+  
+  html.w-mod-js [data-ix="fade-in-901"] {
+    opacity: 0;
+    transform: translate(0, -15px);
+  }
+  
+  html.w-mod-js [data-ix="appear-de-abajo"] {
+    opacity: 0;
+    transform: translate(0, 40px);
+  }
+  
+  html.w-mod-js [data-ix="appear-clientes01"], html.w-mod-js [data-ix="appear-clientes-2"], html.w-mod-js [data-ix="appear-clientes-3"] {
+    opacity: 0;
+  }
+  
+  html.w-mod-js [data-ix="fade-in-600s-2"] {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  
+  html.w-mod-js [data-ix="left-rotador"] {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  
+  html.w-mod-js [data-ix="right-rotador"] {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  
+  html.w-mod-js [data-ix="aparecer-rotador"] {
+    opacity: 0;
+    transform: translate(0, -14px);
+  }
+  
+  html.w-mod-js [data-ix="scroll-aparecer-de-derecha"] {
+    opacity: 0;
+    transform: translate(43px);
+  }
+  
+  html.w-mod-js [data-ix="scroll-aparecer-de-izquierda"] {
+    opacity: 0;
+    transform: translate(-64px);
+  }
+  
+  html.w-mod-js [data-ix="scroll-aparecer-fade-in"] {
+    opacity: 0;
+  }
+  
+  html.w-mod-js [data-ix="on-load-linea"] {
+    opacity: 0;
+    transform: translate(-300px);
+  }
+  
+  html.w-mod-js [data-ix="on-load-linea-2"], html.w-mod-js [data-ix="on-load-linea-3"], html.w-mod-js [data-ix="on-load-linea-4"] {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  
+  html.w-mod-js [data-ix="on-load-punto1"], html.w-mod-js [data-ix="on-load-punto-2"], html.w-mod-js [data-ix="on-load-punto-3"], html.w-mod-js [data-ix="on-load-punto-4"] {
+    opacity: 0;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .button.paradas-de-planta.index {
+      width: 40%;
+    }
+  
+    .hero.foto1 {
+      background-position: 0 0;
+    }
+  
+    .hero.foto2 {
+      background-position: 0;
+      background-size: cover;
+    }
+  
+    .hero.foto3, .hero.foto5 {
+      background-position: 100%;
+    }
+  
+    .hero.flow01 {
+      background-position: 100% 0;
+      background-size: cover;
+    }
+  
+    .hero.flow02, .hero.flow03 {
+      background-position: 100% 0;
+    }
+  
+    .hero.flow04 {
+      background-position: 100% 0;
+      background-attachment: scroll;
+    }
+  
+    .hero.flow05 {
+      background-position: 100% 0;
+    }
+  
+    .hero.especif-tecnica {
+      background-position: 86% 81%;
+    }
+  
+    .hero.especif-tecnica02 {
+      background-position: 100%;
+    }
+  
+    .hero.montaje03 {
+      background-position: 55%;
+    }
+  
+    .hero.montaje05 {
+      background-position: 65% 64%;
+    }
+  
+    .hero.andamios01 {
+      background-position: 50%;
+    }
+  
+    .hero.andamios02 {
+      background-position: 23% 0;
+      background-repeat: no-repeat;
+    }
+  
+    .hero.andamios03 {
+      background-position: 100%;
+    }
+  
+    .hero.andamios04 {
+      background-position: 68% 39px;
+    }
+  
+    .hero.andamios05 {
+      background-position: 31% 0;
+    }
+  
+    .hero.inspeccion01 {
+      background-position: 66% 0;
+    }
+  
+    .hero.inspeccion02 {
+      background-position: 86%;
+    }
+  
+    .hero.inspeccion03 {
+      background-position: 44%;
+    }
+  
+    .hero.inspeccion04 {
+      background-position: 50% 0;
+    }
+  
+    .hero.domiciliario01 {
+      background-position: 50% 57px;
+    }
+  
+    .hero.industrial01 {
+      background-position: 100% 0;
+    }
+  
+    .hero.domiciliario02, .hero.domiciliario03 {
+      background-position: 100%;
+    }
+  
+    .hero.industrial02 {
+      background-position: 50% 0;
+    }
+  
+    .hero.industrial04 {
+      background-position: 100% 0;
+    }
+  
+    .hero.industrial05 {
+      background-position: 62% 0;
+    }
+  
+    .hero.industrial06 {
+      background-position: 0 0;
+    }
+  
+    .hero.industrial07 {
+      background-position: 100% 0;
+    }
+  
+    .nav-hero {
+      font-size: 12px;
+    }
+  
+    .foto-txt {
+      margin-right: -21px;
+    }
+  
+    .foto-txt.celeste {
+      margin-left: -21px;
+      margin-right: -11px;
+    }
+  
+    .foto-txt.sin-foto {
+      height: auto;
+    }
+  
+    .foto-txt.video {
+      background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+      background-size: 125px;
+    }
+  
+    .foto-txt.limpieza {
+      background-position: -62px;
+    }
+  
+    .float-texto-hero {
+      width: 330px;
+      margin-top: 127px;
+      margin-left: 20px;
+    }
+  
+    .float-texto-hero.solo-industrial {
+      width: 326px;
+    }
+  
+    .float-texto-hero.hidrodecapado {
+      width: 339px;
+    }
+  
+    .bajada-hero-titulo {
+      width: 355px;
+    }
+  
+    .bajada-hero-titulo.espec {
+      font-size: 22px;
+    }
+  
+    .bajada-hero-titulo.solo-empresa {
+      width: auto;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  
+    .txt-hero {
+      height: 135px;
+      margin-bottom: -26px;
+      font-size: 18px;
+    }
+  
+    .txt-hero.hidrocortehero {
+      height: 53px;
+      margin-bottom: 0;
+    }
+  
+    .txt-hero.hidrocortehero-3-lineas {
+      height: 107px;
+    }
+  
+    .txt-hero.hidrocortehero-3-lineas.limpquim {
+      margin-bottom: -55px;
+    }
+  
+    .txt-hero.montaje {
+      height: 80px;
+    }
+  
+    .txt-hero.andamios {
+      height: 63px;
+    }
+  
+    .txt-hero.transporte.industrial {
+      height: 91px;
+    }
+  
+    .txt-hero.de-empresa {
+      font-size: 15px;
+      line-height: 21px;
+    }
+  
+    .txt-hero.hidrodecapado {
+      height: 163px;
+    }
+  
+    .hero-contact {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      top: 96px;
+    }
+  
+    .desp-slide {
+      margin-top: 17px;
+      margin-right: 114px;
+      line-height: 15px;
+    }
+  
+    .titulos-txt {
+      margin-bottom: 30px;
+    }
+  
+    .titulos-txt.left {
+      display: block;
+    }
+  
+    .titulos-txt.hidrodecapado {
+      margin-bottom: 22px;
+    }
+  
+    .txt-descripcion {
+      text-align: left;
+      font-size: 18px;
+    }
+  
+    .float-texto-descp {
+      margin-top: 79px;
+      margin-left: 54px;
+    }
+  
+    .float-texto-descp.derecho {
+      width: 77%;
+    }
+  
+    .float-texto-descp.derecho._2col {
+      width: 96%;
+      margin-top: 51px;
+      margin-left: 31px;
+    }
+  
+    .float-texto-descp.derecho.hidrocorte {
+      width: 84%;
+      margin-left: 36px;
+    }
+  
+    .float-texto-descp.izquierdo {
+      width: 94%;
+      margin-top: 99px;
+      margin-left: 16px;
+    }
+  
+    .float-texto-descp.izquierdo.flowleft {
+      width: 96%;
+      margin-top: 42px;
+      margin-left: -1px;
+    }
+  
+    .float-texto-descp.izquierdo.flowright {
+      width: 96%;
+      margin-top: 60px;
+      margin-left: 27px;
+    }
+  
+    .float-texto-descp.izquierdo.hidrocorte {
+      width: 96%;
+      margin-top: 72px;
+      margin-left: 10px;
+    }
+  
+    .float-texto-descp.flow {
+      width: 84%;
+      margin-left: 27px;
+    }
+  
+    .consultar {
+      margin-top: 17px;
+      margin-left: 14px;
+    }
+  
+    .ver-video {
+      width: 103%;
+      height: 57px;
+      top: 391px;
+    }
+  
+    .ver-video:hover {
+      background-color: rgba(0, 0, 0, .56);
+    }
+  
+    .ver-video.lightbox-container {
+      width: auto;
+      height: auto;
+      margin-right: -221px;
+    }
+  
+    .ver-video.para-lightbox.derecha {
+      width: 100%;
+    }
+  
+    .ver-video.especif {
+      top: 893px;
+    }
+  
+    .boton-ver-video {
+      width: 57px;
+      height: 57px;
+    }
+  
+    .iconos-box {
+      margin-left: 99px;
+    }
+  
+    .iconos-box._3col {
+      margin-left: 0;
+    }
+  
+    .tipo-de-servicios {
+      font-size: 22px;
+      line-height: 31px;
+    }
+  
+    .txt-servicios {
+      margin-bottom: 5px;
+      padding-right: 26px;
+      font-size: 16px;
+    }
+  
+    .video-icon {
+      width: 40px;
+      height: 40px;
+      margin-left: 7px;
+      top: 12px;
+    }
+  
+    .ver-video-txt {
+      width: 315px;
+      margin-top: 10px;
+      margin-left: 65px;
+      font-size: 12px;
+    }
+  
+    .ver-video-txt:hover {
+      margin-left: 72px;
+    }
+  
+    .ver-video-txt.lightbox-txt {
+      margin-top: 8px;
+      margin-left: 60px;
+    }
+  
+    .ver-video-txt.lightbox-txt:hover {
+      margin-left: 65px;
+    }
+  
+    .flecha-blanca {
+      margin-top: 33px;
+      margin-left: 97px;
+      display: none;
+    }
+  
+    .flecha-blanca.left {
+      margin-top: -17px;
+      margin-left: 96px;
+    }
+  
+    .foto-columna {
+      height: auto;
+    }
+  
+    .foto-ancho {
+      min-width: 0;
+      height: auto;
+      margin-left: -29px;
+    }
+  
+    .foto-ancho.derecho {
+      height: auto;
+    }
+  
+    .celeste-left, .foto-larga {
+      display: none;
+    }
+  
+    .div-video {
+      width: auto;
+      height: 450px;
+      margin-right: -25px;
+    }
+  
+    .mas-servicios {
+      margin-bottom: 61px;
+      margin-left: 15px;
+    }
+  
+    .mas-servicios.left {
+      margin-bottom: 20px;
+    }
+  
+    .mas-servicios-list {
+      padding-left: 13px;
+      padding-right: 13px;
+      font-size: 20px;
+    }
+  
+    .mas-servicios-list.left {
+      margin-left: 0;
+    }
+  
+    .mas-servicios-link {
+      font-size: 14px;
+    }
+  
+    .servicios.paradas-de-planta.bco {
+      padding-left: 33px;
+      padding-right: 33px;
+      font-size: 46px;
+    }
+  
+    .footer {
+      padding-top: 24px;
+    }
+  
+    .navbar.para-empresa, .navbar.seccion-servicios {
+      box-shadow: none;
+    }
+  
+    .menu.menu-open {
+      color: #fff;
+      border: 1px dotted #7e7e7e;
+      border-bottom-color: #fff;
+      padding-left: 15px;
+    }
+  
+    .menu.menu-open:hover {
+      border-bottom-color: rgba(255, 255, 255, .21);
+    }
+  
+    .menu.menu-open.w--current {
+      border-bottom: 0 rgba(255, 255, 255, .38);
+    }
+  
+    .menu.menu-open.w--current:hover {
+      border-top: 0 rgba(0, 0, 0, 0);
+      border-bottom-style: none;
+      border-bottom-width: 0;
+    }
+  
+    .titulo-footer {
+      font-size: 15px;
+    }
+  
+    .txt-footer {
+      font-size: 13px;
+    }
+  
+    .redes-container {
+      width: 32%;
+      margin-bottom: 19px;
+      margin-right: 14px;
+    }
+  
+    .image-footer-container {
+      margin-top: -22px;
+    }
+  
+    .image-footer-01 {
+      width: 60%;
+    }
+  
+    .slides-clientes {
+      width: 25.5%;
+    }
+  
+    .logo-image {
+      width: 61px;
+    }
+  
+    .icon-open.index {
+      color: #fff;
+    }
+  
+    .menu-buttom.w--open {
+      background-color: #44d24a;
+    }
+  
+    .nav-menu-open {
+      float: right;
+      text-align: right;
+      background-color: #44d24a;
+      width: auto;
+    }
+  
+    .icono-link {
+      margin-left: -38px;
+      margin-right: 0;
+    }
+  
+    .icono-link._3col {
+      margin-left: 19px;
+    }
+  
+    .sidebar-boton-enviar.sticky {
+      margin-top: 45px;
+      margin-left: 0;
+      padding: 7px 11px;
+      font-size: 10px;
+    }
+  
+    .lightbox {
+      width: auto;
+      height: auto;
+      margin-right: 0;
+      padding-right: 0;
+      display: inline-block;
+      position: static;
+      left: -112px;
+      overflow: visible;
+    }
+  
+    .lightbox-izquierdo {
+      height: auto;
+      overflow: visible;
+    }
+  
+    .image-lightbox {
+      float: none;
+      width: 100%;
+      height: 400px;
+      display: block;
+      position: static;
+      overflow: auto;
+    }
+  
+    .test-lightbox {
+      width: 486px;
+      height: 369px;
+    }
+  
+    .ver-fotos {
+      left: -6px;
+    }
+  
+    .photo-lightbox {
+      width: 41px;
+      margin-top: 12px;
+      margin-left: 6px;
+      margin-right: 0;
+      top: 51px;
+    }
+  
+    .container-verde {
+      margin-right: -23px;
+    }
+  
+    .container-verde.left {
+      margin-left: -19px;
+      margin-right: -10px;
+    }
+  
+    .logotestimonial.logo01 {
+      width: 60px;
+      height: 60px;
+      margin-top: 0;
+    }
+  
+    .logotestimonial.logo01.left {
+      margin-top: 0;
+    }
+  
+    .logotestimonial.logo02 {
+      width: 60px;
+      height: 60px;
+      margin-top: 0;
+      bottom: 60px;
+      left: 59px;
+    }
+  
+    .logotestimonial.logo02.left02 {
+      top: -60px;
+      left: -59px;
+    }
+  
+    .testimonial {
+      font-size: 18px;
+    }
+  
+    .testimonial01.left {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      font-size: 33px;
+    }
+  
+    .testimonial02.left {
+      font-size: 32px;
+    }
+  
+    .contariner-testimonial {
+      width: 83%;
+      margin-top: 97px;
+      margin-left: 23px;
+    }
+  
+    .contariner-testimonial.left {
+      width: 93%;
+      margin-top: 159px;
+      margin-left: 14px;
+    }
+  
+    .slidenav-testimonial {
+      float: right;
+      padding-top: 0;
+      top: -167px;
+    }
+  
+    ._50 {
+      margin-left: 0;
+    }
+  
+    .bg-video.especif {
+      height: 950px;
+    }
+  
+    .bg-video.andamiosvideo {
+      background-position: 50%;
+    }
+  
+    .bg-video.inspeccionvideo {
+      background-position: 50% 0;
+      background-size: auto;
+    }
+  
+    .container {
+      padding: 0;
+    }
+  
+    .container50.objetivo {
+      padding-left: 37px;
+      padding-right: 37px;
+    }
+  
+    .container50.objetivo.especif {
+      height: 950px;
+    }
+  
+    .container50.objetivo.andamios {
+      padding-top: 37px;
+      padding-left: 25px;
+      padding-right: 34px;
+    }
+  
+    .container50.objetivo.hidrodecapado {
+      padding-left: 18px;
+      padding-right: 13px;
+    }
+  
+    .container50.lightbox-convencional {
+      background-image: url('../images/pattern-gris-20.png'), url('../images/limpieza-convencional_1.jpg');
+    }
+  
+    .container50.txt.inspe-ccion {
+      padding-top: 67px;
+      padding-left: 29px;
+      padding-right: 29px;
+    }
+  
+    .container50.servicioflow.bg-sistema-flow {
+      background-position: 6% 0;
+    }
+  
+    .container50.test-sistema-flow {
+      z-index: 900;
+    }
+  
+    .container50.hidrocorte.bg-paradas {
+      background-position: 63% 81%;
+      width: 100%;
+    }
+  
+    .container50.test-hidrocorte.bg-paradas {
+      width: 0%;
+    }
+  
+    .container50.index-rotador.indexmontaje {
+      background-position: 0 0, 50%;
+    }
+  
+    .contenedor {
+      display: inline;
+    }
+  
+    .icon-div {
+      width: 69%;
+    }
+  
+    .icon-div.target {
+      background-position: 50% 19px;
+      height: 180px;
+    }
+  
+    .icon-div.mts {
+      background-position: 50% -16px;
+      height: 150px;
+    }
+  
+    .inspeccion-container.alta {
+      padding: 51px 28px;
+    }
+  
+    .inspeccion-arrow {
+      display: none;
+    }
+  
+    .titulo-industrial {
+      line-height: 25px;
+    }
+  
+    .certificacion-footer {
+      width: 60%;
+    }
+  
+    .empresa01 {
+      background-position: 0 0, 100% 0;
+    }
+  
+    ._33 {
+      height: 500px;
+      padding: 84px 34px 0;
+    }
+  
+    .iso.index {
+      margin-top: -23px;
+    }
+  
+    .hq {
+      display: none;
+    }
+  
+    .form-section.exito {
+      background-position: 0 0, 100%;
+    }
+  
+    .contacto-title {
+      margin-top: 85px;
+      padding-left: 91px;
+      padding-right: 91px;
+      line-height: 38px;
+    }
+  
+    .contacto-title.de-contacto.exito {
+      margin-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      line-height: 36px;
+    }
+  
+    .bajada.paradas.deplanta.bco {
+      margin-top: 10px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  
+    .container-flow {
+      z-index: 900;
+    }
+  
+    .container-flow.paradas-de-planta-bg {
+      top: 42px;
+      left: -675px;
+    }
+  
+    .container-flow.paradas-de-planta-bg.index {
+      width: 450px;
+      top: auto;
+      bottom: 0;
+      left: -431px;
+      right: 0;
+    }
+  
+    .container-flow.del-rotador {
+      top: 103px;
+      left: -13px;
+    }
+  
+    .contacto-img {
+      width: 12%;
+      transform: translate(-14px, 119px);
+    }
+  
+    .contacto-bg {
+      width: 79%;
+    }
+  
+    .comparti-ti-experiencia {
+      width: 80%;
+    }
+  
+    .sidebar-servicios {
+      display: none;
+    }
+  
+    .subir {
+      right: 5px;
+    }
+  
+    .trabaja-con-nosotros.cd-contacto {
+      margin-top: 98px;
+    }
+  
+    .texto-trabaja-con-nosotros {
+      float: left;
+      font-size: 38px;
+    }
+  
+    .queres-trabajar {
+      width: 101px;
+      height: 105px;
+    }
+  
+    .ingysol {
+      width: 80%;
+      margin-left: 17px;
+    }
+  
+    .h1-small {
+      line-height: 20px;
+    }
+  
+    .h2-li-condensed {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  
+    .container-ciculo._2-lineas {
+      height: 162px;
+    }
+  
+    .container-ciculo._6lineas {
+      min-height: 272px;
+    }
+  
+    .clientes-paradas {
+      width: 50%;
+    }
+  
+    .clientes-paradas.last {
+      width: 100%;
+    }
+  
+    .cliente01._1col {
+      height: 700px;
+    }
+  
+    .cliente01._2col {
+      height: 350px;
+    }
+  
+    .contenedor-detalle-clientes._1 {
+      top: 523px;
+    }
+  
+    .contenedor-detalle-clientes._2 {
+      top: 172px;
+    }
+  
+    .contenedor-detalles-bg-verde {
+      width: 70%;
+    }
+  
+    .contenedor-detalles-bg-verde.dow {
+      width: 60%;
+    }
+  
+    .contenedor-detalles-bg-verde._3clientes {
+      width: 35%;
+    }
+  
+    .bajadas-quimicas {
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  
+    .video-boy {
+      display: none;
+    }
+  
+    .bottom-fixed.transporte {
+      background-position: 0 0, 0 0, 0;
+    }
+  
+    .azul-index {
+      height: 40px;
+    }
+  
+    .azul-index.ppales-txt {
+      width: 300px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    .azul-index.ppales-txt.news.index {
+      width: 284px;
+    }
+  
+    .titles-index {
+      font-size: 24px;
+    }
+  
+    .slide.home3 {
+      background-position: 0 0, 100%;
+    }
+  
+    .slide.home09 {
+      background-position: 0 0, 0 0, 50% 0;
+    }
+  
+    .right-arrow-index {
+      top: -48px;
+      left: -185px;
+    }
+  
+    .right-arrow-index.left {
+      top: -44px;
+      left: 131px;
+      right: 0;
+    }
+  
+    .bg-container-icons {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .ballon {
+      width: 130px;
+      margin-top: -148px;
+      margin-right: -18px;
+    }
+  
+    .div-responsive-home {
+      background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .3)), url('../images/pattern-gris.png'), url('../images/servicios-hlb-mantenimiento-industrial.jpg');
+      background-position: 0 0, 0 0, 0 100%;
+      background-size: auto, auto, cover;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+  
+    .tapador {
+      display: none;
+    }
+  
+    .fix {
+      margin-top: 0;
+    }
+  
+    .para-rotador-home {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .button.paradas-de-planta {
+      display: none;
+    }
+  
+    .button.paradas-de-planta.index {
+      float: left;
+      width: 60%;
+      height: 50px;
+      padding-top: 13px;
+      display: block;
+    }
+  
+    .bg-hero.celeste {
+      background-color: rgba(0, 0, 0, 0);
+      width: 101%;
+      height: auto;
+      overflow: visible;
+    }
+  
+    .hero.foto1 {
+      background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .3)), url('../images/limpieza-hidrocinetica01.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+      background-attachment: scroll, scroll;
+    }
+  
+    .hero.foto2 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .35)), url('../images/limpieza-hidrocinetica02.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: cover, auto;
+    }
+  
+    .hero.foto3 {
+      background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .35)), url('../images/limpieza-hidrocinetica03.jpg');
+      background-size: auto, cover;
+    }
+  
+    .hero.foto4 {
+      background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/limpieza-hidrocinetica05.jpg');
+      background-size: auto, cover;
+    }
+  
+    .hero.foto5 {
+      background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/limpieza-hidrocinetica04.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.flow01 {
+      background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(31, 31, 31, .4)), url('../images/servicios-hlb-hidrodecapado-de-superficies_1.jpg');
+      background-position: 0 0, 33% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.flow02 {
+      background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/hlb-hidrocat-flow-02.jpg');
+      background-size: auto, cover;
+    }
+  
+    .hero.flow03 {
+      background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/hlb-hidrocat-flow-03.jpg');
+      background-size: auto, cover;
+    }
+  
+    .hero.flow04 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/servicios-hlb-hidrodecapado-de-superficies-02.jpg');
+      background-position: 0 0, 27% 0;
+      background-size: auto, cover;
+      background-attachment: scroll, scroll;
+    }
+  
+    .hero.flow05 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/hlb-hidrocat-flow-05.jpg');
+      background-size: auto, cover;
+    }
+  
+    .hero.hidro01 {
+      background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/hlb-hidrocorte-01.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.hidro02 {
+      background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/hlb-hidrocorte-02.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.hidro03 {
+      background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/hlb-hidrocorte-03.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.hidro04 {
+      background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/hlb-hidrocorte-04.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.limp01 {
+      background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/hlb-limpieza-quimica-01.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.limp02 {
+      background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)), url('../images/hlb-limpieza-quimica-02.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.limp03 {
+      background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)), url('../images/hlb-limpieza-quimica-03.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.limp04 {
+      background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)), url('../images/hlb-limpieza-quimica-04.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.limp05 {
+      background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)), url('../images/hlb-limpieza-quimica-05.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.especif-tecnica {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/especificacion-tecnica-01.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.especif-tecnica02 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/especificacion-tecnica-02.jpg');
+      background-repeat: repeat, no-repeat;
+      background-size: auto, cover;
+    }
+  
+    .hero.montaje01 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/montaje-industrial-02.jpg');
+      background-position: 0 0, 50% 0;
+      background-repeat: repeat, no-repeat;
+      background-size: auto, cover;
+    }
+  
+    .hero.montaje02 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/montaje-industrial-03.jpg');
+      background-position: 0 0, 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.montaje03 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/montaje-industrial-04.jpg');
+      background-position: 0 0, 35% -17%;
+      background-size: auto, cover;
+    }
+  
+    .hero.montaje04 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/montaje-industrial-05.jpg');
+      background-position: 0 0, 4% 46px;
+      background-size: auto, cover;
+    }
+  
+    .hero.montaje05 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/montaje-industrial-01.jpg');
+      background-position: 0 0, 14% 0;
+      background-repeat: repeat, no-repeat;
+      background-size: auto, cover;
+    }
+  
+    .hero.andamios01 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/servicio-hlb-andamios-01.jpg');
+      background-size: auto, cover;
+    }
+  
+    .hero.andamios02 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/servicio-hlb-andamios-02.jpg');
+      background-position: 0 0, 2% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.andamios03 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/servicio-hlb-andamios-03.jpg');
+      background-position: 0 0, 100%;
+      background-size: auto, cover;
+    }
+  
+    .hero.andamios04 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/servicio-hlb-andamios-04.jpg');
+      background-position: 0 0, 31% 39px;
+      background-size: auto, cover;
+    }
+  
+    .hero.andamios05 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/servicio-hlb-andamios-05.jpg');
+      background-size: auto, cover;
+    }
+  
+    .hero.inspeccion01 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/hlb-inspeccion-01.jpg');
+      background-position: 0 0, 50% 0;
+    }
+  
+    .hero.inspeccion02 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/hlb-inspeccion-02.jpg');
+      background-position: 0 0, 65% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.inspeccion03 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/hlb-inspeccion-03.jpg');
+      background-position: 0 0, 5% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.inspeccion04 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/hlb-inspeccion-04.jpg');
+      background-position: 0 0, 0 30%;
+    }
+  
+    .hero.inspeccion05 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/hlb-inspeccion-05.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.domiciliario01 {
+      background-image: url('../images/pattern.png'), url('../images/servicios-hlb-transporte-industrial-03.jpg');
+      background-position: 0 0, 50% 57px;
+      background-repeat: repeat, no-repeat;
+      background-size: 1px, cover;
+    }
+  
+    .hero.industrial01 {
+      background-image: url('../images/pattern.png'), url('../images/servicios-hlb-transporte-industrial-01.jpg');
+      background-position: 0 0, 50% 0;
+      background-repeat: repeat, no-repeat;
+      background-size: 1px, cover;
+    }
+  
+    .hero.domiciliario02 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/03.jpg');
+      background-position: 0 0, 44% 0;
+      background-size: auto, cover;
+    }
+  
+    .hero.domiciliario03 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/01.jpg');
+      background-size: auto, cover;
+    }
+  
+    .hero.industrial02 {
+      background-image: url('../images/pattern.png'), url('../images/servicios-hlb-transporte-industrial-02.jpg');
+      background-position: 0 0, 50% 0;
+      background-repeat: repeat, no-repeat;
+      background-size: 1px, cover;
+    }
+  
+    .hero.flow10 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/servicios-hlb-hidrodecapado-de-superficies.jpg');
+      background-position: 0 0, 50%;
+      background-size: auto, cover;
+    }
+  
+    .hero.flow11 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/servicios-hlb-hidrodecapado-de-superficies-05.jpg');
+      background-position: 0 0, 50%;
+      background-size: auto, cover;
+    }
+  
+    .hero.industrial04 {
+      background-image: url('../images/pattern.png'), url('../images/servicios-hlb-transporte-industrial-05.jpg');
+      background-position: 0 0, 0 0;
+      background-size: 1px, cover;
+    }
+  
+    .hero.industrial05 {
+      background-image: url('../images/pattern.png'), url('../images/servicios-hlb-transporte-industrial-04.jpg');
+      background-position: 0 0, 62% 0;
+      background-repeat: repeat, no-repeat;
+      background-size: 1px, cover;
+    }
+  
+    .hero.industrial06 {
+      background-image: url('../images/pattern.png'), url('../images/servicios-hlb-transporte-industrial-06.jpg');
+      background-position: 0 0, 0 0;
+      background-size: 1px, cover;
+    }
+  
+    .hero.industrial07 {
+      background-image: url('../images/pattern.png'), url('../images/servicios-hlb-transporte-industrial-07.jpg');
+      background-position: 0 0, 100% 0;
+      background-size: 1px, cover;
+    }
+  
+    .nav-hero {
+      font-size: 11px;
+    }
+  
+    .hero-div {
+      float: none;
+      width: 100%;
+      position: relative;
+    }
+  
+    .hero-div.slider {
+      width: 100%;
+    }
+  
+    .foto-txt {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .foto-txt.celeste {
+      display: none;
+    }
+  
+    .foto-txt.gris {
+      height: auto;
+    }
+  
+    .hero-light {
+      font-size: 40px;
+      line-height: 35px;
+    }
+  
+    .float-texto-hero {
+      z-index: 500;
+      margin-top: -398px;
+      position: relative;
+    }
+  
+    .float-texto-hero.solo-industrial {
+      width: 530px;
+    }
+  
+    .hero-bold {
+      font-size: 40px;
+      line-height: 35px;
+    }
+  
+    .hero-bold.de-empresa {
+      margin-top: 4px;
+    }
+  
+    .bajada-hero-titulo {
+      color: #fff;
+    }
+  
+    .bajada-hero-titulo.hidrocorte {
+      font-size: 20px;
+      line-height: 23px;
+    }
+  
+    .bajada-hero-titulo.solo-empresa {
+      color: #fff;
+    }
+  
+    .bajada-hero-titulo.de-servicios.index {
+      width: auto;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  
+    .txt-hero {
+      color: #fff;
+    }
+  
+    .txt-hero.de-servicios {
+      color: #4c4c4c;
+    }
+  
+    .txt-hero.de-servicios.index {
+      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  
+    .hero-contact {
+      background-color: #00bccd;
+      margin-top: -60px;
+      display: none;
+      top: 60px;
+    }
+  
+    .hero-contact.responsive {
+      display: block;
+    }
+  
+    .hero-contact.mobile {
+      width: 27%;
+      height: 42px;
+      display: block;
+      position: absolute;
+      top: -442px;
+      bottom: auto;
+      left: auto;
+      right: 0;
+    }
+  
+    .hero-contact.mobile.paradas-de-planta {
+      margin-top: 58px;
+      position: absolute;
+      top: 0;
+    }
+  
+    .desp-slide {
+      margin-top: 26px;
+    }
+  
+    .titulos-txt {
+      margin-top: 44px;
+      margin-bottom: 28px;
+    }
+  
+    .txt-descripcion {
+      margin-bottom: 32px;
+    }
+  
+    .float-texto-descp.derecho {
+      width: 90%;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+  
+    .float-texto-descp.derecho._2col {
+      margin-left: 0;
+    }
+  
+    .float-texto-descp.derecho.hidrocorte {
+      width: 97%;
+      margin-top: 38px;
+      margin-left: 13px;
+    }
+  
+    .float-texto-descp.izquierdo {
+      width: 85%;
+      margin-top: 14px;
+      margin-left: 12px;
+    }
+  
+    .float-texto-descp.izquierdo.flowright {
+      margin-left: 14px;
+    }
+  
+    .float-texto-descp.izquierdo.hidrocorte {
+      margin-top: 17px;
+    }
+  
+    .float-texto-descp.flow {
+      margin-top: 91px;
+    }
+  
+    .consultar.mobile {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-top: 13px;
+      margin-left: 11px;
+      font-family: Montserrat, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  
+    .consultar.mobile.paradas-de-planta-mobile {
+      margin-top: 13px;
+    }
+  
+    .consultar.mobile.paradas-de-planta-mobile.unico {
+      margin-top: -11px;
+    }
+  
+    .ver-video {
+      width: 100%;
+      top: 193px;
+    }
+  
+    .ver-video.para-lightbox._750px {
+      top: 389px;
+    }
+  
+    .ver-video.especif {
+      top: 392px;
+      left: 0;
+      right: 0;
+    }
+  
+    .boton-ver-video {
+      width: 57px;
+      margin-right: 0;
+    }
+  
+    .iconos-box {
+      text-align: center;
+      width: 80px;
+      height: 80px;
+      margin-top: 9px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+    }
+  
+    .txt-servicios {
+      margin-bottom: 32px;
+      padding-top: 0;
+    }
+  
+    .txt-servicios.empresa-icon {
+      margin-bottom: 10px;
+      padding-right: 0;
+    }
+  
+    .ver-video-txt {
+      width: 434px;
+      margin-left: 72px;
+    }
+  
+    .ver-video-txt:hover {
+      margin-left: 76px;
+    }
+  
+    .flecha-blanca {
+      display: none;
+    }
+  
+    .foto-ancho {
+      width: 105%;
+      height: 400px;
+      margin-top: 0;
+      margin-left: -11px;
+      margin-right: 0;
+    }
+  
+    .list-item.last {
+      border-bottom-style: solid;
+      margin-bottom: -20px;
+    }
+  
+    .list-item.last.last-responsive {
+      border-bottom-style: none;
+      margin-bottom: 0;
+    }
+  
+    .list {
+      padding-top: 0;
+      padding-left: 0;
+    }
+  
+    .div-video {
+      height: auto;
+      padding-top: 0;
+    }
+  
+    .mas-servicios {
+      width: 99%;
+      margin-top: 17px;
+      margin-bottom: 23px;
+      margin-left: 0;
+      padding-left: 22px;
+    }
+  
+    .mas-servicios.left {
+      float: left;
+      width: auto;
+      margin-top: 24px;
+      margin-bottom: 25px;
+      padding-left: 0;
+    }
+  
+    .mas-servicios-list {
+      width: 100%;
+    }
+  
+    .mas-servicios-list.left {
+      float: left;
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    .mas-servicios-link.last {
+      border-bottom-style: none;
+      border-bottom-width: 1px;
+    }
+  
+    .mas-servicios-link.last.lastresponsivew {
+      border-bottom-style: none;
+    }
+  
+    .servicios {
+      float: left;
+      margin-top: 22px;
+      margin-bottom: 22px;
+      margin-left: 15px;
+    }
+  
+    .servicios.paradas-de-planta {
+      color: #fff;
+      margin-top: -1px;
+      margin-bottom: -7px;
+      margin-left: auto;
+      padding-top: 6px;
+      padding-left: 86px;
+      padding-right: 166px;
+      font-size: 36px;
+      line-height: 34px;
+    }
+  
+    .servicios.paradas-de-planta.bco {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 33px;
+      line-height: 28px;
+    }
+  
+    .footer {
+      padding-top: 9px;
+    }
+  
+    .navbar.para-empresa {
+      box-shadow: none;
+      color: #fff;
+    }
+  
+    .separator-footer {
+      display: none;
+    }
+  
+    .titulo-footer {
+      text-align: center;
+      border-top: 1px solid rgba(171, 171, 171, .6);
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 16px;
+      padding-left: 31px;
+      padding-right: 31px;
+      font-size: 18px;
+      display: block;
+    }
+  
+    .txt-footer {
+      text-align: center;
+    }
+  
+    .redes-container {
+      text-align: center;
+      width: 10%;
+      margin-left: 23px;
+      margin-right: 27px;
+    }
+  
+    .image-footer-container {
+      text-align: center;
+    }
+  
+    .image-footer-01 {
+      width: 40%;
+      margin-top: 36px;
+    }
+  
+    .slides-clientes {
+      width: 33.3%;
+    }
+  
+    .servicios-section {
+      padding-bottom: 26px;
+    }
+  
+    .servicios-section.bg-gris {
+      border-bottom: 1px solid rgba(76, 76, 76, .29);
+    }
+  
+    .servicios-section.bg-gris.solo-transporte {
+      padding-top: 42px;
+    }
+  
+    .um-credit {
+      padding-right: 17px;
+    }
+  
+    .iconos-credits {
+      float: none;
+    }
+  
+    .um {
+      margin-bottom: 2px;
+    }
+  
+    .mas-servicios-50 {
+      position: static;
+    }
+  
+    .icono-link {
+      width: 100%;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  
+    .sidebar {
+      background-color: #00bccd;
+      width: auto;
+      display: block;
+      position: static;
+    }
+  
+    .sidebar-text-field {
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0);
+      border-style: none none solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #d9d7d7;
+      padding-left: 4px;
+    }
+  
+    .sidebar-block-close {
+      display: none;
+    }
+  
+    .sidebar-h2 {
+      margin-top: 18px;
+    }
+  
+    .test-lightbox {
+      width: 104%;
+    }
+  
+    .container-mas-serv-left {
+      padding-top: 0;
+    }
+  
+    .container-verde {
+      margin-right: -10px;
+    }
+  
+    .container-verde.left {
+      height: 350px;
+    }
+  
+    .logotestimonial.logo01.left {
+      float: right;
+    }
+  
+    .logotestimonial.logo02.left02 {
+      float: right;
+      top: 0;
+      left: 0;
+    }
+  
+    .slider-verde, .mask-testimonial {
+      height: auto;
+    }
+  
+    .slidenav-testimonial {
+      padding-top: 34px;
+      top: -132px;
+    }
+  
+    ._50 {
+      margin-left: 9px;
+    }
+  
+    .container-gris {
+      height: auto;
+      padding-bottom: 22px;
+    }
+  
+    .bg-verde {
+      height: auto;
+    }
+  
+    .bg-video, .bg-video.hidrovideo, .bg-video.hidrocorte-video {
+      height: 250px;
+    }
+  
+    .bg-video.especif {
+      height: 450px;
+    }
+  
+    .bg-video.montajevideo {
+      background-position: 0 52%;
+    }
+  
+    .bg-video.andamiosvideo {
+      background-position: 50% 0;
+    }
+  
+    .bg-video.inspeccionvideo {
+      background-position: 50% -76px;
+      background-size: cover;
+    }
+  
+    .container50 {
+      width: 100%;
+      height: 250px;
+    }
+  
+    .container50.objetivo {
+      height: auto;
+      padding: 6px 30px 0;
+    }
+  
+    .container50.objetivo.especif {
+      height: auto;
+    }
+  
+    .container50.objetivo.andamios {
+      height: auto;
+      padding-top: 11px;
+    }
+  
+    .container50.verde {
+      height: 340px;
+    }
+  
+    .container50.servicios-que-ofrecemos {
+      padding-bottom: 21px;
+    }
+  
+    .container50.servicios-que-ofrecemos.right {
+      height: 311px;
+    }
+  
+    .container50.bg-flecha {
+      text-align: center;
+      height: 100px;
+      display: none;
+    }
+  
+    .container50.lightbox-convencional {
+      background-image: url('../images/pattern-gris-20.png'), url('../images/limpieza-convencional_1.jpg');
+    }
+  
+    .container50.txt {
+      padding-top: 31px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  
+    .container50.txt.poco-texto {
+      padding-top: 26px;
+    }
+  
+    .container50.txt.inspe-ccion {
+      margin-top: 24px;
+      padding-top: 4px;
+      padding-bottom: 0;
+    }
+  
+    .container50.lightbox-flow, .container50.lightbox-flow02 {
+      height: 250px;
+    }
+  
+    .container50.lightbox-hidrocorte {
+      height: 447px;
+    }
+  
+    .container50.especif {
+      height: 450px;
+    }
+  
+    .container50.servicioflow.bg-sistema-flow {
+      float: left;
+      background-position: -75% 0;
+      margin-top: 0;
+    }
+  
+    .container50.test-sistema-flow {
+      float: none;
+      width: 60%;
+      height: auto;
+      position: absolute;
+    }
+  
+    .container50.test-sistema-flow.del-index {
+      width: 60%;
+    }
+  
+    .container50.hidrocorte.bg-limp-quimica {
+      background-position: 31% -188px;
+    }
+  
+    .container50.hidrocorte.bg-paradas.index {
+      background-position: 63% 81%, 50%;
+      background-size: auto, cover;
+      height: 395px;
+      margin-top: 0;
+    }
+  
+    .container50.test-hidrocorte {
+      clear: none;
+      height: 247px;
+      margin-top: -191px;
+      position: relative;
+    }
+  
+    .container50.test-hidrocorte.bg-paradas {
+      margin-top: 0;
+      top: 88px;
+      left: -583px;
+    }
+  
+    .container50._3ero.bg-hidrocinteica {
+      height: 500px;
+    }
+  
+    .container50.index-rotador {
+      width: 100%;
+      height: 430px;
+    }
+  
+    .container50.index-rotador.indexhidrocorte {
+      height: 429px;
+    }
+  
+    .container50.del-rotador {
+      height: auto;
+    }
+  
+    .titulo-flecha {
+      float: left;
+      width: 100px;
+      margin-right: -231px;
+      padding-left: 22px;
+      font-size: 16px;
+    }
+  
+    .icon-div {
+      width: 42%;
+      margin-bottom: 10px;
+    }
+  
+    .icon-div.mts {
+      background-position: 50% -22px;
+    }
+  
+    .inspeccion {
+      height: 250px;
+    }
+  
+    .inspeccion-container {
+      margin-top: 0;
+      padding-top: 24px;
+      padding-left: 29px;
+      padding-right: 29px;
+    }
+  
+    .inspeccion-container.alta {
+      padding: 0;
+    }
+  
+    .titulo-industrial {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  
+    .certificacion-footer {
+      width: 40%;
+    }
+  
+    .rotate-iso {
+      width: 41%;
+      margin-top: -47px;
+      display: block;
+    }
+  
+    .rotate-iso.wjta {
+      width: 42%;
+      margin-top: -30px;
+      display: block;
+    }
+  
+    .heroslider.paradas-de-planta.hero-parada {
+      height: 500px;
+    }
+  
+    .empresa01 {
+      background-image: url('../images/pattern.png'), url('../images/servicios-hlb-nuestra-empresa.jpg');
+      background-size: 1px, cover;
+    }
+  
+    .bg-verde-empresa {
+      background-color: rgba(0, 0, 0, 0);
+      display: block;
+    }
+  
+    .bg-verde-empresa.abajo {
+      display: none;
+    }
+  
+    .icon-empresa.full {
+      width: 100%;
+    }
+  
+    ._33 {
+      width: 100%;
+      height: auto;
+      padding-top: 61px;
+      padding-bottom: 30px;
+    }
+  
+    ._33.bg02 {
+      background-position: 0 0, 50%;
+    }
+  
+    .section-empresa {
+      padding-top: 10px;
+    }
+  
+    .iso {
+      background-color: rgba(0, 0, 0, 0);
+      border-style: none;
+      border-bottom-width: 0;
+    }
+  
+    .iso.index {
+      margin-top: -48px;
+      padding-bottom: 26px;
+    }
+  
+    .form-section {
+      height: auto;
+      padding-bottom: 40px;
+    }
+  
+    .form-section.exito {
+      background-image: linear-gradient(rgba(0, 0, 0, .48), rgba(0, 0, 0, 0)), url('../images/bg-exito-01.jpg');
+      background-position: 0 0, 50%;
+      background-size: auto, cover;
+    }
+  
+    ._50-form {
+      width: 100%;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  
+    .submit-buttom {
+      margin-left: 20px;
+    }
+  
+    .contacto-title {
+      float: left;
+      clear: right;
+      text-align: left;
+      margin-top: 22px;
+      padding-left: 79px;
+      padding-right: 37px;
+      font-size: 32px;
+      line-height: 33px;
+      overflow: visible;
+    }
+  
+    .contacto-title.de-contacto {
+      margin-top: 73px;
+    }
+  
+    .bold.titler {
+      float: left;
+    }
+  
+    .succes {
+      font-size: 24px;
+      line-height: 33px;
+    }
+  
+    .bajada {
+      float: left;
+      text-align: left;
+      margin-top: -8px;
+      margin-bottom: 99px;
+      padding-left: 94px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  
+    .bajada.paradas.deplanta {
+      color: #fff;
+      margin-top: 12px;
+      padding-left: 86px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 23px;
+    }
+  
+    .bajada.paradas.deplanta.fdo-negro {
+      color: #000;
+      text-align: center;
+      margin: 16px auto 0;
+      padding-left: 52px;
+      padding-right: 52px;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 31px;
+      display: block;
+    }
+  
+    .bajada.paradas.deplanta.bco {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  
+    .section-servicios {
+      margin-bottom: 0;
+    }
+  
+    .container-flow {
+      float: none;
+      width: auto;
+      padding-top: 32px;
+      position: static;
+      left: auto;
+    }
+  
+    .container-flow:hover {
+      box-shadow: none;
+    }
+  
+    .container-flow.hidrocorte {
+      float: right;
+      margin-top: -205px;
+      padding-top: 20px;
+    }
+  
+    .container-flow.hidrocorte.del-medio {
+      margin-top: -218px;
+    }
+  
+    .container-flow.hidrocorte.last {
+      margin-top: -137px;
+    }
+  
+    .container-flow._3ero {
+      width: 107%;
+      margin-top: -22px;
+      padding-top: 20px;
+    }
+  
+    .container-flow._3ero.hidro {
+      width: auto;
+      margin-top: -140px;
+      padding-top: 20px;
+    }
+  
+    .container-flow.abajo {
+      width: 100%;
+      margin-top: 40px;
+      padding-top: 33px;
+    }
+  
+    .container-flow.paradas-de-planta-bg {
+      width: 400px;
+      min-width: 0;
+      margin-left: 183px;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .container-flow.paradas-de-planta-bg.index {
+      width: 387px;
+      padding-top: 15px;
+      padding-bottom: 25px;
+    }
+  
+    .container-flow.del-rotador {
+      width: auto;
+      padding: 0 22px 20px 30px;
+      position: relative;
+    }
+  
+    .container-flow.del-rotador._2 {
+      overflow: visible;
+    }
+  
+    .titulo-del-servicio.index {
+      width: 85%;
+      font-size: 24px;
+      line-height: 24px;
+    }
+  
+    .titulo-del-servicio.solo-del-fixed {
+      margin-top: -22px;
+    }
+  
+    .alwyn.index {
+      font-size: 28px;
+    }
+  
+    .ampliar, .ampliar.index {
+      font-size: 14px;
+    }
+  
+    .footer-flyout {
+      display: block;
+    }
+  
+    .container-contacto-footer {
+      display: none;
+    }
+  
+    .container-exito {
+      margin-top: 139px;
+      padding-left: 30px;
+    }
+  
+    .img-subir {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .trabaja-con-nosotros.cd-contacto {
+      margin-top: 66px;
+      margin-bottom: 46px;
+    }
+  
+    .texto-trabaja-con-nosotros {
+      float: none;
+      width: 90.3%;
+      margin-top: -26px;
+      font-size: 43px;
+      line-height: 36px;
+    }
+  
+    .texto-trabaja-con-nosotros.contact-page {
+      width: 100%;
+      margin-bottom: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+    .queres-trabajar {
+      margin-left: 7px;
+    }
+  
+    .ver-su-web {
+      margin-top: 3%;
+    }
+  
+    .ingysol {
+      text-align: center;
+      width: 50%;
+      margin-left: 129px;
+    }
+  
+    .parada-de-planta {
+      background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .4)), url('../images/servicios-hlb-paradas-de-planta.jpg');
+      background-size: auto, cover;
+    }
+  
+    .container-parada-de-planta {
+      top: 65px;
+    }
+  
+    .container-parada-de-planta.bottom {
+      bottom: 54px;
+    }
+  
+    .container-parada-de-planta.index {
+      margin-top: -93px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 83px;
+      padding-right: 55px;
+      display: block;
+      position: absolute;
+      top: -12px;
+    }
+  
+    .img-conoce-mas {
+      width: 100px;
+      top: -113px;
+    }
+  
+    .bg-azul {
+      padding-top: 49px;
+    }
+  
+    .para-txt-condensed {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .para-txt-condensed.de-limpieza {
+      padding-top: 9px;
+    }
+  
+    .primer-columna {
+      padding-right: 10px;
+    }
+  
+    .primer-columna.last {
+      padding-left: 10px;
+    }
+  
+    .circulo {
+      margin-top: -2px;
+      margin-left: 12px;
+    }
+  
+    .container-ciculo {
+      min-height: 92px;
+      margin-right: 10px;
+    }
+  
+    .container-ciculo._2-lineas {
+      height: 180px;
+      min-height: 161px;
+    }
+  
+    .container-ciculo._6lineas {
+      min-height: 405px;
+    }
+  
+    .container-txt-li, .container-txt-li.right {
+      padding-right: 10px;
+    }
+  
+    .contenedor-detalle-clientes._1 {
+      top: 529px;
+      left: 17px;
+    }
+  
+    .contenedor-detalle-clientes._2 {
+      top: 180px;
+      left: 17px;
+    }
+  
+    .contenedor-detalle-clientes._3 {
+      top: 130px;
+      left: 16px;
+    }
+  
+    .contenedor-detalles-bg-verde {
+      width: 96%;
+    }
+  
+    .contenedor-detalles-bg-verde.dow {
+      width: 80%;
+    }
+  
+    .contenedor-detalles-bg-verde._3clientes {
+      width: 46%;
+    }
+  
+    .bajadas-quimicas {
+      padding-left: 26px;
+      padding-right: 26px;
+    }
+  
+    .bottom-fixed {
+      height: 500px;
+      margin-top: -154px;
+    }
+  
+    .bottom-fixed.transporte {
+      background-image: url('../images/servicios-hlb-transporte-de-residuos.jpg');
+      background-position: 14% 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      margin-top: 0;
+    }
+  
+    .container-social {
+      text-align: center;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  
+    .video-container {
+      display: none;
+    }
+  
+    .ppales-servicios {
+      padding-bottom: 7px;
+    }
+  
+    .container-title-ppales-servicios {
+      float: right;
+      margin-top: 0;
+      position: absolute;
+      top: -80px;
+      left: 270px;
+    }
+  
+    .container-title-ppales-servicios.news.index {
+      display: none;
+      position: static;
+    }
+  
+    .titles-index.news.social-title {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  
+    .tapador-inclinado {
+      display: none;
+    }
+  
+    .slide.home1 {
+      background-position: 0 0, 50%;
+    }
+  
+    .slider-index {
+      height: 429px;
+    }
+  
+    .right-arrow-index {
+      float: right;
+      padding-right: 0;
+      position: relative;
+      top: -297px;
+      left: -303px;
+    }
+  
+    .right-arrow-index.left {
+      display: block;
+      position: absolute;
+      top: -126px;
+      left: -89px;
+      overflow: hidden;
+    }
+  
+    .news-section {
+      padding-bottom: 0;
+    }
+  
+    .bg-verde-claro {
+      height: 300px;
+    }
+  
+    .container-social-index {
+      margin-top: -249px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .news-container {
+      margin-top: -28px;
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  
+    .conentedor-titles-social {
+      margin-top: -21px;
+    }
+  
+    .contenedor-title-act-social {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  
+    .ballon {
+      margin-right: -2px;
+    }
+  
+    .flecha-social {
+      width: 10%;
+    }
+  
+    .container-blockquote {
+      width: 100%;
+      margin-top: 247px;
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+  
+    .dos-puntos {
+      width: 90%;
+    }
+  
+    .dos-puntos.img {
+      width: 20%;
+    }
+  
+    .dos-puntos.txt {
+      font-size: 25px;
+      line-height: 26px;
+    }
+  
+    .index {
+      font-size: 28px;
+    }
+  
+    .loading-container {
+      top: 15%;
+    }
+  
+    .fix {
+      margin-top: 0;
+    }
+  
+    .paradas-de-planta-arrow {
+      font-size: 10px;
+    }
+  
+    .emergencias {
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .button.isobutton {
+      width: 90%;
+      font-size: 14px;
+    }
+  
+    .button.paradas-de-planta.index {
+      width: 90%;
+    }
+  
+    .hero-slider {
+      height: 460px;
+      min-height: 460px;
+    }
+  
+    .hero.foto1 {
+      background-position: 0 0, 0;
+    }
+  
+    .hero.flow01 {
+      background-position: 0 0, 49% 0;
+    }
+  
+    .hero.flow04 {
+      background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/servicios-hlb-hidrodecapado-de-superficies-02.jpg');
+      background-position: 0 0, 26%;
+    }
+  
+    .hero.especif-tecnica02 {
+      background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .74)), url('../images/especificacion-tecnica-02.jpg');
+      background-position: 0 0, 22% 0;
+    }
+  
+    .hero.montaje01 {
+      background-position: 0 0, 16%;
+    }
+  
+    .hero.montaje02 {
+      background-position: 0 0, -68px;
+    }
+  
+    .hero.montaje03 {
+      background-position: 0 0, 55% -17%;
+    }
+  
+    .hero.montaje04 {
+      background-position: 0 0, 42% 46px;
+    }
+  
+    .hero.montaje05 {
+      background-position: 0 0, 48% 0;
+    }
+  
+    .hero.andamios01 {
+      background-position: 0 0, -10% 0;
+    }
+  
+    .hero.andamios03 {
+      background-position: 0 0, 40% 1px;
+    }
+  
+    .hero.andamios04 {
+      background-position: 0 0, 56% 39px;
+    }
+  
+    .hero.inspeccion01 {
+      background-position: 0 0, 61% 0;
+    }
+  
+    .hero.inspeccion02 {
+      background-position: 0 0, 76% 0;
+    }
+  
+    .hero.inspeccion04 {
+      background-position: 0 0, 30% -92px;
+    }
+  
+    .hero.inspeccion05 {
+      background-position: 0 0, 100% 39px;
+    }
+  
+    .hero.domiciliario02 {
+      background-position: 0 0, 100%;
+    }
+  
+    .hero.flow10 {
+      background-position: 0 0, 10%;
+    }
+  
+    .hero.flow11 {
+      background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url('../images/servicios-hlb-hidrodecapado-de-superficies-05.jpg');
+      background-position: 0 0, 50% 0;
+    }
+  
+    .hero.industrial06 {
+      background-position: 0 0, 0 0;
+    }
+  
+    .nav-hero {
+      margin-right: 8px;
+      font-size: 8px;
+      bottom: 8px;
+    }
+  
+    .hero-div {
+      height: auto;
+    }
+  
+    .div-100 {
+      height: 460px;
+    }
+  
+    .txt-section {
+      width: 100%;
+    }
+  
+    .foto-txt {
+      width: 100%;
+      height: 400px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .foto-txt.limpieza {
+      background-position: 100% 0;
+      background-attachment: scroll;
+    }
+  
+    .foto-txt.hidrovideo {
+      float: none;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  
+    .foto-txt.lightbox-automatizada, .foto-txt.lightbox-tradicional {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .foto-txt.hidrocortevideo {
+      background-position: 43%;
+    }
+  
+    .foto-txt.lightboxhidrocorte {
+      background-position: 57% 0;
+    }
+  
+    .foto-txt.limpvideo {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .hero-light {
+      float: left;
+      background-color: rgba(0, 0, 0, .29);
+      margin-bottom: 0;
+      padding: 0 4px 3px 8px;
+      font-size: 39px;
+    }
+  
+    .hero-light.hidrocorte {
+      padding-bottom: 0;
+    }
+  
+    .hero-light.transporte {
+      width: 75.5%;
+      padding-bottom: 0;
+      font-size: 37px;
+      line-height: 34px;
+    }
+  
+    .float-texto-hero {
+      width: 271px;
+      margin-top: -327px;
+      margin-left: 12px;
+    }
+  
+    .float-texto-hero.solo-industrial {
+      width: 304px;
+    }
+  
+    .float-texto-hero.hidrodecapado {
+      width: 89.5%;
+    }
+  
+    .hero-bold {
+      float: left;
+      background-color: rgba(0, 0, 0, .29);
+      margin-top: -3px;
+      margin-bottom: 5px;
+      padding: 0 8px 5px;
+      font-size: 35px;
+      line-height: 34px;
+    }
+  
+    .hero-bold.transporte {
+      float: left;
+      clear: left;
+      width: 76%;
+      margin-top: -1px;
+      line-height: 33px;
+      display: block;
+    }
+  
+    .hero-bold.de-empresa {
+      margin-top: 0;
+    }
+  
+    .bajada-hero-titulo {
+      width: 217px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 19px;
+    }
+  
+    .bajada-hero-titulo.hidrocorte {
+      width: 270px;
+      font-size: 17px;
+    }
+  
+    .bajada-hero-titulo.hidrocorte.quimica {
+      float: left;
+      margin-top: 1px;
+      line-height: 16px;
+    }
+  
+    .bajada-hero-titulo.espec {
+      float: left;
+      width: 265px;
+      margin-top: -2px;
+      margin-bottom: 0;
+      font-size: 19px;
+    }
+  
+    .bajada-hero-titulo.montaje {
+      float: left;
+      width: 271px;
+      margin-top: -2px;
+    }
+  
+    .bajada-hero-titulo.solo-empresa {
+      float: left;
+      width: auto;
+    }
+  
+    .bajada-hero-titulo.de-servicios {
+      width: auto;
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 15px;
+    }
+  
+    .bajada-hero-titulo.hidrolavado {
+      float: left;
+      margin-top: -1px;
+      margin-bottom: 13px;
+      line-height: 17px;
+    }
+  
+    .txt-hero {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  
+    .txt-hero.de-empresa {
+      height: auto;
+      margin-bottom: 23px;
+      font-size: 15px;
+      line-height: 19px;
+    }
+  
+    .txt-hero.de-servicios {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  
+    .hero-contact {
+      width: 100%;
+      margin-top: -1px;
+      margin-left: 0;
+      margin-right: 0;
+      display: none;
+      position: relative;
+      top: 5px;
+    }
+  
+    .hero-contact.mobile {
+      width: 48%;
+      position: absolute;
+      top: -399px;
+      bottom: auto;
+      left: auto;
+      right: 0;
+    }
+  
+    .desp-slide {
+      margin-top: 15px;
+      margin-left: 2px;
+      margin-right: 107px;
+      font-size: 11px;
+      line-height: 14px;
+    }
+  
+    .titulos-txt {
+      margin-top: 20px;
+      line-height: 34px;
+    }
+  
+    .txt-descripcion {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  
+    .float-texto-descp {
+      width: 95%;
+      margin-left: 8px;
+    }
+  
+    .float-texto-descp.derecho {
+      width: 96%;
+      margin-top: 15px;
+      margin-left: 5px;
+    }
+  
+    .float-texto-descp.derecho._2col {
+      margin-top: 20px;
+      padding-left: 5px;
+    }
+  
+    .float-texto-descp.derecho.hidrocorte {
+      width: 93%;
+    }
+  
+    .float-texto-descp.izquierdo {
+      width: 96%;
+      margin-top: 15px;
+      margin-left: 5px;
+    }
+  
+    .float-texto-descp.izquierdo.flowright {
+      margin-left: 7px;
+    }
+  
+    .consultar {
+      margin-left: 18px;
+    }
+  
+    .consultar.mobile {
+      margin-top: 12px;
+      margin-left: 14px;
+    }
+  
+    .ver-video {
+      width: 100%;
+      height: 48px;
+      position: relative;
+      top: 402px;
+      left: 0;
+    }
+  
+    .ver-video.especif {
+      top: 402px;
+    }
+  
+    .boton-ver-video {
+      width: 46px;
+      height: 48px;
+    }
+  
+    .tipo-de-servicios {
+      font-family: Roboto, sans-serif;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  
+    .txt-servicios {
+      margin-bottom: 0;
+      padding-right: 0;
+    }
+  
+    .txt-servicios.empresa-icon.full {
+      padding-left: 24px;
+    }
+  
+    .video-icon {
+      width: 30px;
+      height: 30px;
+      min-height: 30px;
+      margin-top: 10px;
+      top: 0;
+    }
+  
+    .ver-video-txt {
+      width: 248px;
+      margin-top: 10px;
+      margin-left: 52px;
+      font-size: 11px;
+      line-height: 16px;
+    }
+  
+    .ver-video-txt:hover {
+      margin-left: 53px;
+    }
+  
+    .ver-video-txt.lightbox-txt {
+      margin-top: 10px;
+      margin-left: 56px;
+    }
+  
+    .foto-ancho {
+      width: 108%;
+    }
+  
+    .list-item.last {
+      border-bottom-style: solid;
+      margin-bottom: -27px;
+      padding-bottom: 24px;
+    }
+  
+    .list-item.last.last-responsive {
+      border-bottom-style: none;
+      border-bottom-width: 0;
+      margin-bottom: 2px;
+    }
+  
+    .list {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .div-video {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .mas-servicios {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      padding: 13px 18px 14px;
+      display: block;
+    }
+  
+    .mas-servicios.left {
+      margin-left: auto;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 12px;
+      line-height: 25px;
+    }
+  
+    .mas-servicios-list {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 20px;
+    }
+  
+    .mas-servicios-list.left {
+      float: left;
+      width: 94%;
+      padding-right: 0;
+    }
+  
+    .mas-servicios-link.last {
+      border-bottom-style: dotted;
+      border-bottom-width: 1px;
+    }
+  
+    .mas-servicios-link.last.lastresponsivew {
+      border-bottom-style: none;
+    }
+  
+    .servicios {
+      margin-top: 16px;
+      margin-left: 18px;
+      font-size: 24px;
+      line-height: 25px;
+    }
+  
+    .servicios.paradas-de-planta {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      padding-top: 0;
+      padding-left: 23px;
+      padding-right: 51px;
+      font-size: 40px;
+      line-height: 38px;
+    }
+  
+    .servicios.paradas-de-planta.bco {
+      font-size: 29px;
+    }
+  
+    .footer {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  
+    .navbar.para-empresa {
+      box-shadow: none;
+      color: #fff;
+    }
+  
+    .navbar.seccion-servicios {
+      box-shadow: none;
+    }
+  
+    .menu.menu-open {
+      border-top-style: none;
+    }
+  
+    .menu.menu-open:hover {
+      background-color: rgba(0, 0, 0, .09);
+      border-top-width: 0;
+      border-top-color: #fff;
+      border-bottom-style: solid;
+      padding-left: 25px;
+    }
+  
+    .li-footer {
+      line-height: 34px;
+    }
+  
+    .redes-container {
+      width: 16%;
+      margin-left: 31px;
+      margin-right: 9px;
+    }
+  
+    .image-footer-01 {
+      width: 60%;
+      margin-top: 35px;
+    }
+  
+    .mask-clientes {
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+  
+    .slides-clientes {
+      width: 100%;
+    }
+  
+    .servicios-section {
+      padding-bottom: 0;
+      padding-right: 6px;
+    }
+  
+    .servicios-section.bg-gris {
+      border-bottom-color: rgba(76, 76, 76, .16);
+    }
+  
+    .servicios-section.bg-gris.solo-transporte {
+      padding-top: 6px;
+    }
+  
+    .logo-credit {
+      width: 89px;
+      margin-right: 6px;
+    }
+  
+    .facebook {
+      clear: none;
+    }
+  
+    .um-credit {
+      float: left;
+      text-align: center;
+      margin-top: -4px;
+      margin-bottom: 25px;
+      padding-right: 0;
+    }
+  
+    .iconos-credits {
+      float: left;
+      font-size: 12px;
+    }
+  
+    .um {
+      float: left;
+      margin-left: 10px;
+      margin-right: 12px;
+    }
+  
+    .sidebar {
+      padding-top: 0;
+      padding-bottom: 0;
+      display: block;
+    }
+  
+    .sidebar-block-close {
+      display: none;
+    }
+  
+    .sidebar-h2 {
+      margin-top: 32px;
+    }
+  
+    .test-lightbox {
+      float: left;
+      clear: left;
+      width: 107%;
+      max-width: 500px;
+      height: auto;
+      margin-left: -10px;
+      padding-left: 0;
+      display: block;
+      position: static;
+    }
+  
+    .ver-fotos {
+      top: -29px;
+      left: -1px;
+    }
+  
+    .photo-lightbox {
+      width: 10%;
+      margin-top: 12px;
+      margin-left: 5px;
+      margin-right: 0;
+    }
+  
+    .photo-lightbox:hover {
+      margin-left: 5px;
+    }
+  
+    .container-verde {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .container-verde.left {
+      width: 100%;
+      height: 439px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .testimonial {
+      font-size: 18px;
+    }
+  
+    .testimonial.left {
+      font-size: 16px;
+    }
+  
+    .testimonial01 {
+      font-size: 30px;
+    }
+  
+    .testimonial01.left {
+      float: none;
+    }
+  
+    .testimonial02 {
+      margin-bottom: 41px;
+      font-size: 30px;
+    }
+  
+    .contariner-testimonial.left {
+      margin-top: 106px;
+    }
+  
+    .slidenav-testimonial {
+      font-size: 8px;
+    }
+  
+    .test {
+      background-color: #44d24a;
+      width: 100%;
+    }
+  
+    .contenedor-listado-servicios {
+      padding-left: 23px;
+    }
+  
+    ._50 {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .bg-verde {
+      height: 416px;
+    }
+  
+    .bg-video, .bg-video.hidrovideo {
+      height: 450px;
+    }
+  
+    .bg-video.hidrocorte-video {
+      background-position: 50%;
+      height: 450px;
+    }
+  
+    .bg-video.montajevideo {
+      background-position: 17% 0;
+    }
+  
+    .bg-video.inspeccionvideo {
+      background-position: 50% 0;
+    }
+  
+    .container50 {
+      height: 450px;
+    }
+  
+    .container50.objetivo {
+      height: auto;
+      padding: 5px 15px 44px 16px;
+    }
+  
+    .container50.verde {
+      height: 417px;
+    }
+  
+    .container50.servicios-que-ofrecemos {
+      padding-bottom: 23px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .container50.servicios-que-ofrecemos.right {
+      height: auto;
+    }
+  
+    .container50.bg-flecha {
+      height: auto;
+      display: none;
+    }
+  
+    .container50.lightbox-convencional {
+      background-image: url('../images/pattern-gris-20.png'), url('../images/limpieza-convencional_1.jpg');
+    }
+  
+    .container50.txt {
+      height: auto;
+      padding: 23px 15px;
+    }
+  
+    .container50.txt.ventajas {
+      background-color: #f2f2f2;
+    }
+  
+    .container50.txt.poco-texto {
+      padding-top: 0;
+    }
+  
+    .container50.txt.inspe-ccion {
+      margin-top: 0;
+      margin-bottom: 15px;
+      padding-left: 13px;
+      padding-right: 13px;
+    }
+  
+    .container50.lightbox-flow {
+      height: 400px;
+    }
+  
+    .container50.lightbox-flow02 {
+      background-position: 0 0, 100%;
+      height: 450px;
+    }
+  
+    .container50.lightbox-hidrocorte {
+      height: 437px;
+    }
+  
+    .container50.lightbox-haz {
+      background-position: 43%;
+    }
+  
+    .container50.lightbox-implementos {
+      background-image: url('../images/pattern-gris.png'), url('../images/servicios-hlb-torqueo-de-presicion.jpg');
+      background-position: 57%, 100%;
+    }
+  
+    .container50.lightbox-industrial {
+      background-position: 0 0, 50%;
+    }
+  
+    .container50.rotador {
+      height: 250px;
+    }
+  
+    .container50.servicioflow.bg-sistema-flow {
+      background-position: 5% -12px;
+    }
+  
+    .container50.servicioflow.bg-05 {
+      margin-top: -164px;
+    }
+  
+    .container50.servicioflow.bg-montaje-ind {
+      background-position: 44% 0;
+    }
+  
+    .container50.test-sistema-flow {
+      float: left;
+      width: 78%;
+      height: auto;
+      position: absolute;
+    }
+  
+    .container50.test-sistema-flow.del-index {
+      width: 100%;
+    }
+  
+    .container50.hidrocorte.bg-hidrocorte {
+      margin-top: -42px;
+    }
+  
+    .container50.hidrocorte.bg-limp-quimica {
+      background-position: -492px -161px;
+    }
+  
+    .container50.hidrocorte.bg-especif {
+      height: 400px;
+    }
+  
+    .container50.hidrocorte.bg-inspeccion, .container50.hidrocorte.bg-transporte2 {
+      height: 449px;
+    }
+  
+    .container50.hidrocorte.bg-paradas {
+      background-position: 63% 66%;
+      height: 520px;
+    }
+  
+    .container50.hidrocorte.bg-paradas.index {
+      background-position: 63% 66%, 50%;
+      background-size: auto, auto;
+      border-bottom: 5px solid #3891ca;
+      height: 450px;
+    }
+  
+    .container50.test-hidrocorte {
+      margin-top: -242px;
+      position: static;
+    }
+  
+    .container50.test-hidrocorte.bg-paradas.index {
+      width: 85%;
+      height: auto;
+      margin-top: 0;
+      display: block;
+    }
+  
+    .container50._3ero.bg-hidrocinteica {
+      height: 500px;
+      margin-top: -126px;
+    }
+  
+    .container50._3ero.bg-transp01 {
+      margin-top: -47px;
+    }
+  
+    .container50.index-rotador.indexflow {
+      height: 400px;
+    }
+  
+    .container50.index-rotador.indexandamios {
+      background-position: 0 0, 50%;
+    }
+  
+    .contenedor {
+      display: block;
+    }
+  
+    .titulo-responsive {
+      color: #00bccd;
+      margin-top: 18px;
+      margin-bottom: 23px;
+      font-family: Roboto, sans-serif;
+      font-size: 23px;
+      font-weight: 500;
+      display: block;
+    }
+  
+    .caract {
+      padding-top: 6px;
+    }
+  
+    .caract.blue {
+      padding-top: 16%;
+      padding-bottom: 22%;
+    }
+  
+    .container-data {
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+  
+    .icon-div {
+      width: 64%;
+      margin-top: 5px;
+    }
+  
+    .icon-div.mts {
+      background-position: 50% -13px;
+      margin-top: 13px;
+    }
+  
+    .icon-div.icon-conentenedor {
+      background-position: 100% 6%;
+    }
+  
+    .inspeccion-container {
+      padding-top: 15px;
+      padding-left: 9px;
+      padding-right: 9px;
+    }
+  
+    .inspeccion-container.alta {
+      padding-top: 13px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  
+    .titulo-industrial {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .certificacion-footer {
+      width: 60%;
+    }
+  
+    .rotate-iso, .rotate-iso.wjta {
+      width: 70%;
+      margin-top: 0;
+    }
+  
+    .heroslider.paradas-de-planta {
+      height: 700px;
+    }
+  
+    .heroslider.paradas-de-planta.hero-parada {
+      height: 100%;
+    }
+  
+    .empresa01 {
+      background-image: url('../images/pattern.png'), url('../images/servicios-hlb-nuestra-empresa.jpg');
+      background-position: 0 0, 100% 0;
+      background-repeat: repeat, no-repeat;
+      background-size: 1px, cover;
+    }
+  
+    .icon-empresa.full.isoimagen {
+      width: 86%;
+      margin-top: 0;
+    }
+  
+    ._33 {
+      height: auto;
+    }
+  
+    .iso {
+      border-style: none;
+    }
+  
+    .iso.index {
+      margin-top: 0;
+    }
+  
+    .text-field.consulta {
+      margin-bottom: 35px;
+    }
+  
+    .form-section.exito {
+      background-image: linear-gradient(rgba(0, 0, 0, .56), rgba(0, 0, 0, 0)), url('../images/bg-exito-01.jpg');
+      background-position: 0 0, 58% 0;
+      background-size: auto, cover;
+    }
+  
+    ._50-form {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  
+    .submit-buttom {
+      margin: 28px auto 20px;
+      font-size: 14px;
+      display: block;
+    }
+  
+    .contacto-title {
+      line-height: 25px;
+    }
+  
+    .contacto-title.de-contacto.exito {
+      line-height: 29px;
+    }
+  
+    .bold {
+      padding-top: 0;
+      font-size: 25px;
+      line-height: 9px;
+    }
+  
+    .bold.titler {
+      line-height: 25px;
+    }
+  
+    .error-txt {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  
+    .bajada {
+      clear: left;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 14px;
+      padding-right: 14px;
+      font-size: 16px;
+      display: none;
+    }
+  
+    .bajada.paradas.deplanta {
+      margin-top: 11px;
+      margin-bottom: 0;
+      padding-left: 23px;
+      font-size: 13px;
+      line-height: 20px;
+      display: block;
+    }
+  
+    .bajada.paradas.deplanta.fdo-negro {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  
+    .bajada.paradas.deplanta.bco {
+      margin-top: 8px;
+    }
+  
+    .container-titulo {
+      margin-bottom: 64px;
+    }
+  
+    .section-servicios {
+      margin-bottom: 47px;
+    }
+  
+    .container-flow {
+      padding: 20px 13px;
+    }
+  
+    .container-flow.hidrocorte {
+      float: right;
+      width: 75%;
+      margin-top: -206px;
+    }
+  
+    .container-flow.hidrocorte.del-medio {
+      padding-top: 10px;
+    }
+  
+    .container-flow.hidrocorte.last {
+      margin-top: -207px;
+    }
+  
+    .container-flow._3ero {
+      width: auto;
+      margin-top: -47px;
+      padding-top: 51px;
+    }
+  
+    .container-flow._3ero.hidro {
+      margin-top: 79px;
+    }
+  
+    .container-flow.medio {
+      float: left;
+      width: auto;
+    }
+  
+    .container-flow.paradas-de-planta-bg {
+      float: right;
+      width: 250px;
+      margin-top: -15px;
+      margin-left: 0;
+    }
+  
+    .container-flow.paradas-de-planta-bg.index {
+      width: auto;
+      margin-top: -331px;
+      padding-top: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .container-flow.del-rotador {
+      width: 90%;
+      top: 134px;
+    }
+  
+    .titulo-del-servicio {
+      margin-top: 0;
+      font-size: 26px;
+      line-height: 26px;
+    }
+  
+    .titulo-del-servicio.index {
+      width: 90%;
+      margin-top: 17px;
+      line-height: 21px;
+    }
+  
+    .titulo-del-servicio.solo-del-fixed {
+      margin-top: -87px;
+    }
+  
+    .alwyn {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  
+    .alwyn.index {
+      line-height: 23px;
+    }
+  
+    .quote {
+      padding-top: 139px;
+    }
+  
+    .primero {
+      margin-top: 0;
+    }
+  
+    .googleplus {
+      clear: left;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 17px;
+      margin-left: 10px;
+    }
+  
+    .googleplus.share {
+      clear: none;
+      margin-top: -37px;
+      margin-left: 114px;
+    }
+  
+    .container-exito {
+      padding-left: 11px;
+    }
+  
+    .subir {
+      right: 10px;
+    }
+  
+    .img-subir {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .trabaja-con-nosotros.en-section {
+      padding-bottom: 16px;
+    }
+  
+    .trabaja-con-nosotros.cd-contacto {
+      text-align: center;
+    }
+  
+    .texto-trabaja-con-nosotros {
+      width: 96.3%;
+      font-size: 29px;
+      line-height: 27px;
+    }
+  
+    .texto-trabaja-con-nosotros.contact-page {
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  
+    .empleos {
+      padding-top: 17px;
+      padding-bottom: 8px;
+    }
+  
+    .queres-trabajar {
+      margin-top: -39px;
+    }
+  
+    .strong {
+      font-size: 24px;
+    }
+  
+    .ver-su-web {
+      margin-top: 3%;
+      margin-bottom: 10%;
+    }
+  
+    .ingysol {
+      width: 85%;
+      margin-top: -6px;
+      margin-bottom: -16px;
+      margin-left: 20px;
+      padding-top: 0;
+    }
+  
+    .parada-de-planta {
+      background-position: 0 0, 56%;
+    }
+  
+    .parada-de-planta._01 {
+      background-position: 0 0, 0 0, 50%;
+    }
+  
+    .container-parada-de-planta {
+      margin-top: 66px;
+    }
+  
+    .container-parada-de-planta.index {
+      margin-top: 67px;
+      padding-left: 9px;
+      padding-right: 19px;
+    }
+  
+    .bg-azul {
+      height: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .h1-small {
+      margin-top: -5px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      line-height: 19px;
+    }
+  
+    .primer-columna {
+      border-right-style: none;
+      width: 100%;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  
+    .li-condensed {
+      padding-top: 19px;
+      padding-bottom: 19px;
+    }
+  
+    .li-condensed.last {
+      border-bottom-style: dashed;
+    }
+  
+    .li-condensed.last.final, .li-condensed.lastmobile {
+      border-bottom-style: none;
+    }
+  
+    .h2-li-condensed {
+      font-size: 21px;
+    }
+  
+    .container-ciculo {
+      min-height: 70px;
+    }
+  
+    .container-ciculo._2-lineas {
+      height: auto;
+      min-height: 141px;
+    }
+  
+    .container-ciculo._2-lineas.falso {
+      height: 60px;
+      min-height: 74px;
+    }
+  
+    .container-ciculo._6lineas {
+      min-height: 300px;
+    }
+  
+    .container-ciculo._6lineas.falso {
+      min-height: 190px;
+    }
+  
+    .txt-li {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  
+    .clientes-paradas {
+      width: 100%;
+    }
+  
+    .cliente01._3col.profertil {
+      background-position: 44% 0;
+    }
+  
+    .cliente01._3col.total {
+      background-position: 37% 0;
+    }
+  
+    .negativo {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  
+    .contenedor-detalle-clientes._1 {
+      top: 524px;
+    }
+  
+    .contenedor-detalles-bg-verde {
+      width: 75%;
+      padding-left: 3px;
+    }
+  
+    .contenedor-detalles-bg-verde.dow {
+      width: 100%;
+      padding-left: 1px;
+      padding-right: 0;
+    }
+  
+    .contenedor-detalles-bg-verde._3clientes {
+      width: 76%;
+    }
+  
+    .detalle01 {
+      width: 49px;
+      margin-right: 3px;
+      font-size: 8.5px;
+    }
+  
+    .detalle02 {
+      letter-spacing: -.3px;
+      font-size: 13px;
+    }
+  
+    .text-span {
+      font-size: 19px;
+    }
+  
+    .h1-limpiezas {
+      font-size: 34px;
+    }
+  
+    .bajadas-quimicas {
+      padding-left: 9px;
+      padding-right: 9px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+    }
+  
+    .bottom-fixed {
+      margin-top: -157px;
+      margin-bottom: 0;
+    }
+  
+    .bottom-fixed.transporte {
+      background-position: -263px 0;
+      height: 500px;
+      margin-top: 0;
+    }
+  
+    .ppales-servicios {
+      margin-top: 28px;
+    }
+  
+    .container-title-ppales-servicios {
+      float: left;
+      margin-top: -402px;
+      margin-left: 20px;
+      display: block;
+      position: static;
+      top: -422px;
+      left: 17px;
+      overflow: hidden;
+    }
+  
+    .container-title-ppales-servicios.news.index {
+      float: left;
+      margin-top: 54px;
+      display: block;
+    }
+  
+    .azul-index {
+      height: 50px;
+    }
+  
+    .azul-index.ppales-txt {
+      width: 277px;
+      padding-top: 14px;
+      padding-right: 19px;
+    }
+  
+    .link-ppales {
+      width: 24px;
+      margin-top: 2px;
+    }
+  
+    .link-ppales.news {
+      width: 20px;
+    }
+  
+    .titles-index.news.social-title {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  
+    .slide.home3 {
+      background-position: 0 0, 0;
+    }
+  
+    .slide.home4 {
+      background-position: 0 0, -182px;
+    }
+  
+    .slide.home5, .slide.home6 {
+      background-position: 0 0, 50%;
+    }
+  
+    .slide.home0, .slide.home07, .slide.home08 {
+      background-position: 0 0, 50% 0;
+    }
+  
+    .slider-index {
+      height: 430px;
+    }
+  
+    .right-arrow-index {
+      top: -273px;
+      left: -61px;
+    }
+  
+    .right-arrow-index.left {
+      top: -76px;
+      left: 113px;
+    }
+  
+    .bg-container-icons {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .bg-container-icons.ppales, .bg-container-icons.ppales.news.index {
+      display: none;
+    }
+  
+    .news-section {
+      margin-top: -88px;
+    }
+  
+    .flecha-social {
+      width: 20%;
+      margin-top: -125px;
+    }
+  
+    .container-blockquote {
+      margin-top: 252px;
+      padding-left: 20px;
+    }
+  
+    .dos-puntos.txt {
+      width: 100%;
+      font-size: 22px;
+      line-height: 24px;
+    }
+  
+    .loading-container {
+      top: 15%;
+    }
+  
+    .loading-h1 {
+      margin-bottom: 10px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  
+    .loading-h2 {
+      margin-bottom: 17px;
+      line-height: 11px;
+    }
+  
+    .loading-puntos {
+      margin-top: 0;
+    }
+  
+    .firefox-fix {
+      transform: translate(0, -5px);
+    }
+  
+    .icon-arrow {
+      margin-top: 398.5px;
+    }
+  
+    .emergencias {
+      line-height: 19px;
+    }
+  
+    .aviso {
+      padding: 3% 6%;
+    }
+  }
+  
+  
+  

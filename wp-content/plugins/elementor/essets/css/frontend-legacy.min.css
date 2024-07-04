@@ -36,7 +36,7 @@
     padding: 30px
 }
 
-@media (min-width: -1px) {
+@media (min-width: 0px) {
     .elementor-reverse-widescreen>.elementor-container>.elementor-row>:first-child {
         -webkit-box-ordinal-group:11;
         -ms-flex-order: 10;
@@ -98,7 +98,7 @@
     }
 }
 
-@media (min-width: 1025px) and (max-width:-1px) {
+@media (min-width: 1025px) and (max-width:0px) {
     .elementor-reverse-laptop>.elementor-container>.elementor-row>:first-child {
         -webkit-box-ordinal-group:11;
         -ms-flex-order: 10;
@@ -160,7 +160,7 @@
     }
 }
 
-@media (min-width: -1px) and (max-width:-1px) {
+@media (min-width: 0px) and (max-width:0px) {
     .elementor-reverse-laptop>.elementor-container>.elementor-row>:first-child {
         -webkit-box-ordinal-group:11;
         -ms-flex-order: 10;
@@ -222,7 +222,7 @@
     }
 }
 
-@media (min-width: 1025px) and (max-width:-1px) {
+@media (min-width: 1025px) and (max-width:0px) {
     .elementor-reverse-laptop>.elementor-container>.elementor-row>:first-child,.elementor-reverse-laptop>.elementor-container>.elementor-row>:nth-child(2),.elementor-reverse-laptop>.elementor-container>.elementor-row>:nth-child(3),.elementor-reverse-laptop>.elementor-container>.elementor-row>:nth-child(4),.elementor-reverse-laptop>.elementor-container>.elementor-row>:nth-child(5),.elementor-reverse-laptop>.elementor-container>.elementor-row>:nth-child(6),.elementor-reverse-laptop>.elementor-container>.elementor-row>:nth-child(7),.elementor-reverse-laptop>.elementor-container>.elementor-row>:nth-child(8),.elementor-reverse-laptop>.elementor-container>.elementor-row>:nth-child(9),.elementor-reverse-laptop>.elementor-container>.elementor-row>:nth-child(10) {
         -webkit-box-ordinal-group:initial;
         -ms-flex-order: initial;
@@ -352,7 +352,7 @@
     }
 }
 
-@media (min-width: -1px) and (max-width:1024px) {
+@media (min-width: 0px) and (max-width:1024px) {
     .elementor-reverse-tablet>.elementor-container>.elementor-row>:first-child {
         -webkit-box-ordinal-group:11;
         -ms-flex-order: 10;
@@ -414,7 +414,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width:-1px) {
+@media (min-width: 768px) and (max-width:0px) {
     .elementor-reverse-tablet>.elementor-container>.elementor-row>:first-child,.elementor-reverse-tablet>.elementor-container>.elementor-row>:nth-child(2),.elementor-reverse-tablet>.elementor-container>.elementor-row>:nth-child(3),.elementor-reverse-tablet>.elementor-container>.elementor-row>:nth-child(4),.elementor-reverse-tablet>.elementor-container>.elementor-row>:nth-child(5),.elementor-reverse-tablet>.elementor-container>.elementor-row>:nth-child(6),.elementor-reverse-tablet>.elementor-container>.elementor-row>:nth-child(7),.elementor-reverse-tablet>.elementor-container>.elementor-row>:nth-child(8),.elementor-reverse-tablet>.elementor-container>.elementor-row>:nth-child(9),.elementor-reverse-tablet>.elementor-container>.elementor-row>:nth-child(10) {
         -webkit-box-ordinal-group:initial;
         -ms-flex-order: initial;
